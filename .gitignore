@@ -1,0 +1,32 @@
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- Logs / runtime output ---
+logs/
+*.log
+
+# --- ROS2 / colcon build artifacts (if you add a ws later) ---
+build/
+install/
+log/
+
+# --- Rosbag (huge) ---
+bags/
+
+# --- Optional: keep results csv, ignore others ---
+results/*
+!results/*.csv
+
+# --- Optional: data (often large) ---
+data/
