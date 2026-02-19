@@ -12,9 +12,6 @@ __pycache__/
 .venv/
 venv/
 
-# --- Logs / runtime output ---
-logs/
-*.log
 
 # --- ROS2 / colcon build artifacts (if you add a ws later) ---
 build/

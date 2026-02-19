@@ -1,0 +1,4061 @@
+Double value is: 0.3
+usage: ros2 param set [-h] [--spin-time SPIN_TIME] [-s] [--no-daemon]
+                      [--include-hidden-nodes]
+                      node_name parameter_name value
+ros2 param set: error: the following arguments are required: value
+Set parameter successful
+Parameter not set
+Double value is: 0.5
+usage: ros2 [-h] [--use-python-default-buffering]
+            Call `ros2 <command> -h` for more detailed usage. ...
+ros2: error: unrecognized arguments: failure_tolerance
+usage: ros2 [-h] [--use-python-default-buffering]
+            Call `ros2 <command> -h` for more detailed usage. ...
+ros2: error: unrecognized arguments: failure_tolerance
+/controller_server:
+  ros__parameters:
+    /bond_disable_heartbeat_timeout: true
+    FollowPath:
+      BaseObstacle:
+        class: BaseObstacle
+        scale: 0.02
+        sum_scores: false
+      GoalAlign:
+        aggregation_type: last
+        class: GoalAlign
+        forward_point_distance: 0.1
+        scale: 24.0
+      GoalDist:
+        aggregation_type: last
+        class: GoalDist
+        scale: 24.0
+      Oscillation:
+        class: Oscillation
+        oscillation_reset_angle: 0.2
+        oscillation_reset_dist: 0.05
+        oscillation_reset_time: -1.0
+        scale: 1.0
+        x_only_threshold: 0.05
+      PathAlign:
+        aggregation_type: last
+        class: PathAlign
+        forward_point_distance: 0.1
+        scale: 32.0
+      PathDist:
+        aggregation_type: last
+        class: PathDist
+        scale: 32.0
+      RotateToGoal:
+        class: RotateToGoal
+        lookahead_time: -1.0
+        scale: 32.0
+        slowing_factor: 5.0
+      acc_lim_theta: 3.2
+      acc_lim_x: 2.5
+      acc_lim_y: 0.0
+      angular_granularity: 0.025
+      critics:
+      - RotateToGoal
+      - Oscillation
+      - BaseObstacle
+      - GoalAlign
+      - PathAlign
+      - PathDist
+      - GoalDist
+      debug_trajectory_details: true
+      decel_lim_theta: -3.2
+      decel_lim_x: -2.5
+      decel_lim_y: 0.0
+      default_critic_namespaces: []
+      discretize_by_time: false
+      forward_prune_distance: 2.0
+      include_last_point: true
+      limit_vel_cmd_in_traj: false
+      linear_granularity: 0.05
+      marker_lifetime: 0.1
+      max_speed_xy: 0.22
+      max_vel_theta: 1.0
+      max_vel_x: 0.22
+      max_vel_y: 0.0
+      min_speed_theta: 0.0
+      min_speed_xy: 0.0
+      min_vel_x: 0.0
+      min_vel_y: 0.0
+      plugin: dwb_core::DWBLocalPlanner
+      prune_distance: 2.0
+      prune_plan: true
+      publish_cost_grid_pc: false
+      publish_evaluation: true
+      publish_global_plan: true
+      publish_local_plan: true
+      publish_trajectories: true
+      publish_transformed_plan: true
+      short_circuit_trajectory_evaluation: true
+      shorten_transformed_plan: true
+      sim_time: 1.5
+      time_granularity: 0.5
+      trajectory_generator_name: dwb_plugins::StandardTrajectoryGenerator
+      trans_stopped_velocity: 0.25
+      transform_tolerance: 0.2
+      vtheta_samples: 40
+      vx_samples: 20
+      vy_samples: 0
+      xy_goal_tolerance: 0.05
+    controller_frequency: 10.0
+    controller_plugins:
+    - FollowPath
+    failure_tolerance: 0.5
+    general_goal_checker:
+      plugin: nav2_controller::SimpleGoalChecker
+      stateful: true
+      xy_goal_tolerance: 0.25
+      yaw_goal_tolerance: 0.25
+    goal_checker_plugins:
+    - general_goal_checker
+    min_theta_velocity_threshold: 0.001
+    min_x_velocity_threshold: 0.001
+    min_y_velocity_threshold: 0.5
+    odom_topic: odom
+    progress_checker:
+      movement_time_allowance: 10.0
+      plugin: nav2_controller::SimpleProgressChecker
+      required_movement_radius: 0.5
+    progress_checker_plugin: progress_checker
+    publish_zero_velocity: true
+    qos_overrides:
+      /clock:
+        subscription:
+          depth: 1
+          durability: volatile
+          history: keep_last
+          reliability: best_effort
+    speed_limit_topic: speed_limit
+    use_sim_time: true
+
+Set parameter successful
+Double value is: 0.3
+/controller_server:
+  ros__parameters:
+    /bond_disable_heartbeat_timeout: true
+    FollowPath:
+      BaseObstacle:
+        class: BaseObstacle
+        scale: 0.02
+        sum_scores: false
+      GoalAlign:
+        aggregation_type: last
+        class: GoalAlign
+        forward_point_distance: 0.1
+        scale: 24.0
+      GoalDist:
+        aggregation_type: last
+        class: GoalDist
+        scale: 24.0
+      Oscillation:
+        class: Oscillation
+        oscillation_reset_angle: 0.2
+        oscillation_reset_dist: 0.05
+        oscillation_reset_time: -1.0
+        scale: 1.0
+        x_only_threshold: 0.05
+      PathAlign:
+        aggregation_type: last
+        class: PathAlign
+        forward_point_distance: 0.1
+        scale: 32.0
+      PathDist:
+        aggregation_type: last
+        class: PathDist
+        scale: 32.0
+      RotateToGoal:
+        class: RotateToGoal
+        lookahead_time: -1.0
+        scale: 32.0
+        slowing_factor: 5.0
+      acc_lim_theta: 3.2
+      acc_lim_x: 2.5
+      acc_lim_y: 0.0
+      angular_granularity: 0.025
+      critics:
+      - RotateToGoal
+      - Oscillation
+      - BaseObstacle
+      - GoalAlign
+      - PathAlign
+      - PathDist
+      - GoalDist
+      debug_trajectory_details: true
+      decel_lim_theta: -3.2
+      decel_lim_x: -2.5
+      decel_lim_y: 0.0
+      default_critic_namespaces: []
+      discretize_by_time: false
+      forward_prune_distance: 2.0
+      include_last_point: true
+      limit_vel_cmd_in_traj: false
+      linear_granularity: 0.05
+      marker_lifetime: 0.1
+      max_speed_xy: 0.22
+      max_vel_theta: 1.0
+      max_vel_x: 0.22
+      max_vel_y: 0.0
+      min_speed_theta: 0.0
+      min_speed_xy: 0.0
+      min_vel_x: 0.0
+      min_vel_y: 0.0
+      plugin: dwb_core::DWBLocalPlanner
+      prune_distance: 2.0
+      prune_plan: true
+      publish_cost_grid_pc: false
+      publish_evaluation: true
+      publish_global_plan: true
+      publish_local_plan: true
+      publish_trajectories: true
+      publish_transformed_plan: true
+      short_circuit_trajectory_evaluation: true
+      shorten_transformed_plan: true
+      sim_time: 1.5
+      time_granularity: 0.5
+      trajectory_generator_name: dwb_plugins::StandardTrajectoryGenerator
+      trans_stopped_velocity: 0.25
+      transform_tolerance: 0.2
+      vtheta_samples: 40
+      vx_samples: 20
+      vy_samples: 0
+      xy_goal_tolerance: 0.05
+    controller_frequency: 10.0
+    controller_plugins:
+    - FollowPath
+    failure_tolerance: 0.3
+    general_goal_checker:
+      plugin: nav2_controller::SimpleGoalChecker
+      stateful: true
+      xy_goal_tolerance: 0.25
+      yaw_goal_tolerance: 0.25
+    goal_checker_plugins:
+    - general_goal_checker
+    min_theta_velocity_threshold: 0.001
+    min_x_velocity_threshold: 0.001
+    min_y_velocity_threshold: 0.5
+    odom_topic: odom
+    progress_checker:
+      movement_time_allowance: 10.0
+      plugin: nav2_controller::SimpleProgressChecker
+      required_movement_radius: 0.5
+    progress_checker_plugin: progress_checker
+    publish_zero_velocity: true
+    qos_overrides:
+      /clock:
+        subscription:
+          depth: 1
+          durability: volatile
+          history: keep_last
+          reliability: best_effort
+    speed_limit_topic: speed_limit
+    use_sim_time: true
+
+/amcl/change_state
+/amcl/describe_parameters
+/amcl/get_available_states
+/amcl/get_available_transitions
+/amcl/get_parameter_types
+/amcl/get_parameters
+/amcl/get_state
+/amcl/get_transition_graph
+/amcl/list_parameters
+/amcl/set_parameters
+/amcl/set_parameters_atomically
+/apply_joint_effort
+/apply_link_wrench
+/behavior_server/change_state
+/behavior_server/describe_parameters
+/behavior_server/get_available_states
+/behavior_server/get_available_transitions
+/behavior_server/get_parameter_types
+/behavior_server/get_parameters
+/behavior_server/get_state
+/behavior_server/get_transition_graph
+/behavior_server/list_parameters
+/behavior_server/set_parameters
+/behavior_server/set_parameters_atomically
+/bt_navigator/change_state
+/bt_navigator/describe_parameters
+/bt_navigator/get_available_states
+/bt_navigator/get_available_transitions
+/bt_navigator/get_parameter_types
+/bt_navigator/get_parameters
+/bt_navigator/get_state
+/bt_navigator/get_transition_graph
+/bt_navigator/list_parameters
+/bt_navigator/set_parameters
+/bt_navigator/set_parameters_atomically
+/bt_navigator_navigate_through_poses_rclcpp_node/describe_parameters
+/bt_navigator_navigate_through_poses_rclcpp_node/get_parameter_types
+/bt_navigator_navigate_through_poses_rclcpp_node/get_parameters
+/bt_navigator_navigate_through_poses_rclcpp_node/list_parameters
+/bt_navigator_navigate_through_poses_rclcpp_node/set_parameters
+/bt_navigator_navigate_through_poses_rclcpp_node/set_parameters_atomically
+/bt_navigator_navigate_to_pose_rclcpp_node/describe_parameters
+/bt_navigator_navigate_to_pose_rclcpp_node/get_parameter_types
+/bt_navigator_navigate_to_pose_rclcpp_node/get_parameters
+/bt_navigator_navigate_to_pose_rclcpp_node/list_parameters
+/bt_navigator_navigate_to_pose_rclcpp_node/set_parameters
+/bt_navigator_navigate_to_pose_rclcpp_node/set_parameters_atomically
+/clear_joint_efforts
+/clear_link_wrenches
+/controller_server/change_state
+/controller_server/describe_parameters
+/controller_server/get_available_states
+/controller_server/get_available_transitions
+/controller_server/get_parameter_types
+/controller_server/get_parameters
+/controller_server/get_state
+/controller_server/get_transition_graph
+/controller_server/list_parameters
+/controller_server/set_parameters
+/controller_server/set_parameters_atomically
+/delete_entity
+/gazebo/describe_parameters
+/gazebo/get_parameter_types
+/gazebo/get_parameters
+/gazebo/list_parameters
+/gazebo/set_parameters
+/gazebo/set_parameters_atomically
+/get_model_list
+/global_costmap/clear_around_global_costmap
+/global_costmap/clear_entirely_global_costmap
+/global_costmap/clear_except_global_costmap
+/global_costmap/get_costmap
+/global_costmap/global_costmap/change_state
+/global_costmap/global_costmap/describe_parameters
+/global_costmap/global_costmap/get_available_states
+/global_costmap/global_costmap/get_available_transitions
+/global_costmap/global_costmap/get_parameter_types
+/global_costmap/global_costmap/get_parameters
+/global_costmap/global_costmap/get_state
+/global_costmap/global_costmap/get_transition_graph
+/global_costmap/global_costmap/list_parameters
+/global_costmap/global_costmap/set_parameters
+/global_costmap/global_costmap/set_parameters_atomically
+/is_path_valid
+/launch_ros_16432/describe_parameters
+/launch_ros_16432/get_parameter_types
+/launch_ros_16432/get_parameters
+/launch_ros_16432/list_parameters
+/launch_ros_16432/set_parameters
+/launch_ros_16432/set_parameters_atomically
+/lifecycle_manager_localization/describe_parameters
+/lifecycle_manager_localization/get_parameter_types
+/lifecycle_manager_localization/get_parameters
+/lifecycle_manager_localization/is_active
+/lifecycle_manager_localization/list_parameters
+/lifecycle_manager_localization/manage_nodes
+/lifecycle_manager_localization/set_parameters
+/lifecycle_manager_localization/set_parameters_atomically
+/lifecycle_manager_navigation/describe_parameters
+/lifecycle_manager_navigation/get_parameter_types
+/lifecycle_manager_navigation/get_parameters
+/lifecycle_manager_navigation/is_active
+/lifecycle_manager_navigation/list_parameters
+/lifecycle_manager_navigation/manage_nodes
+/lifecycle_manager_navigation/set_parameters
+/lifecycle_manager_navigation/set_parameters_atomically
+/local_costmap/clear_around_local_costmap
+/local_costmap/clear_entirely_local_costmap
+/local_costmap/clear_except_local_costmap
+/local_costmap/get_costmap
+/local_costmap/local_costmap/change_state
+/local_costmap/local_costmap/describe_parameters
+/local_costmap/local_costmap/get_available_states
+/local_costmap/local_costmap/get_available_transitions
+/local_costmap/local_costmap/get_parameter_types
+/local_costmap/local_costmap/get_parameters
+/local_costmap/local_costmap/get_state
+/local_costmap/local_costmap/get_transition_graph
+/local_costmap/local_costmap/list_parameters
+/local_costmap/local_costmap/set_parameters
+/local_costmap/local_costmap/set_parameters_atomically
+/map_server/change_state
+/map_server/describe_parameters
+/map_server/get_available_states
+/map_server/get_available_transitions
+/map_server/get_parameter_types
+/map_server/get_parameters
+/map_server/get_state
+/map_server/get_transition_graph
+/map_server/list_parameters
+/map_server/load_map
+/map_server/map
+/map_server/set_parameters
+/map_server/set_parameters_atomically
+/pause_physics
+/planner_server/change_state
+/planner_server/describe_parameters
+/planner_server/get_available_states
+/planner_server/get_available_transitions
+/planner_server/get_parameter_types
+/planner_server/get_parameters
+/planner_server/get_state
+/planner_server/get_transition_graph
+/planner_server/list_parameters
+/planner_server/set_parameters
+/planner_server/set_parameters_atomically
+/reinitialize_global_localization
+/request_nomotion_update
+/reset_simulation
+/reset_world
+/robot_state_publisher/describe_parameters
+/robot_state_publisher/get_parameter_types
+/robot_state_publisher/get_parameters
+/robot_state_publisher/list_parameters
+/robot_state_publisher/set_parameters
+/robot_state_publisher/set_parameters_atomically
+/rviz2/describe_parameters
+/rviz2/get_parameter_types
+/rviz2/get_parameters
+/rviz2/list_parameters
+/rviz2/set_parameters
+/rviz2/set_parameters_atomically
+/rviz_navigation_dialog_action_client/describe_parameters
+/rviz_navigation_dialog_action_client/get_parameter_types
+/rviz_navigation_dialog_action_client/get_parameters
+/rviz_navigation_dialog_action_client/list_parameters
+/rviz_navigation_dialog_action_client/set_parameters
+/rviz_navigation_dialog_action_client/set_parameters_atomically
+/set_initial_pose
+/smoother_server/change_state
+/smoother_server/describe_parameters
+/smoother_server/get_available_states
+/smoother_server/get_available_transitions
+/smoother_server/get_parameter_types
+/smoother_server/get_parameters
+/smoother_server/get_state
+/smoother_server/get_transition_graph
+/smoother_server/list_parameters
+/smoother_server/set_parameters
+/smoother_server/set_parameters_atomically
+/spawn_entity
+/turtlebot3_diff_drive/describe_parameters
+/turtlebot3_diff_drive/get_parameter_types
+/turtlebot3_diff_drive/get_parameters
+/turtlebot3_diff_drive/list_parameters
+/turtlebot3_diff_drive/set_parameters
+/turtlebot3_diff_drive/set_parameters_atomically
+/turtlebot3_imu/describe_parameters
+/turtlebot3_imu/get_parameter_types
+/turtlebot3_imu/get_parameters
+/turtlebot3_imu/list_parameters
+/turtlebot3_imu/set_parameters
+/turtlebot3_imu/set_parameters_atomically
+/turtlebot3_joint_state/describe_parameters
+/turtlebot3_joint_state/get_parameter_types
+/turtlebot3_joint_state/get_parameters
+/turtlebot3_joint_state/list_parameters
+/turtlebot3_joint_state/set_parameters
+/turtlebot3_joint_state/set_parameters_atomically
+/turtlebot3_laserscan/describe_parameters
+/turtlebot3_laserscan/get_parameter_types
+/turtlebot3_laserscan/get_parameters
+/turtlebot3_laserscan/list_parameters
+/turtlebot3_laserscan/set_parameters
+/turtlebot3_laserscan/set_parameters_atomically
+/unpause_physics
+/velocity_smoother/change_state
+/velocity_smoother/describe_parameters
+/velocity_smoother/get_available_states
+/velocity_smoother/get_available_transitions
+/velocity_smoother/get_parameter_types
+/velocity_smoother/get_parameters
+/velocity_smoother/get_state
+/velocity_smoother/get_transition_graph
+/velocity_smoother/list_parameters
+/velocity_smoother/set_parameters
+/velocity_smoother/set_parameters_atomically
+/waypoint_follower/change_state
+/waypoint_follower/describe_parameters
+/waypoint_follower/get_available_states
+/waypoint_follower/get_available_transitions
+/waypoint_follower/get_parameter_types
+/waypoint_follower/get_parameters
+/waypoint_follower/get_state
+/waypoint_follower/get_transition_graph
+/waypoint_follower/list_parameters
+/waypoint_follower/set_parameters
+/waypoint_follower/set_parameters_atomically
+/amcl/change_state
+/amcl/get_state
+/behavior_server/change_state
+/behavior_server/get_state
+/bt_navigator/change_state
+/bt_navigator/get_state
+/controller_server/change_state
+/controller_server/get_state
+/global_costmap/global_costmap/change_state
+/global_costmap/global_costmap/get_state
+/local_costmap/local_costmap/change_state
+/local_costmap/local_costmap/get_state
+/map_server/change_state
+/map_server/get_state
+/planner_server/change_state
+/planner_server/get_state
+/smoother_server/change_state
+/smoother_server/get_state
+/velocity_smoother/change_state
+/velocity_smoother/get_state
+/waypoint_follower/change_state
+/waypoint_follower/get_state
+lifecycle_msgs/srv/GetState
+usage: ros2 [-h] [--use-python-default-buffering]
+            Call `ros2 <command> -h` for more detailed usage. ...
+ros2: error: unrecognized arguments: lifecycle_msgs/srv/GetState
+usage: ros2 [-h] [--use-python-default-buffering]
+            Call `ros2 <command> -h` for more detailed usage. ...
+ros2: error: unrecognized arguments: lifecycle_msgs/srv/GetState {}
+requester: making request: lifecycle_msgs.srv.GetState_Request()
+
+response:
+lifecycle_msgs.srv.GetState_Response(current_state=lifecycle_msgs.msg.State(id=3, label='active'))
+
+/backup [nav2_msgs/action/BackUp]
+/compute_path_through_poses [nav2_msgs/action/ComputePathThroughPoses]
+/compute_path_to_pose [nav2_msgs/action/ComputePathToPose]
+/drive_on_heading [nav2_msgs/action/DriveOnHeading]
+/follow_path [nav2_msgs/action/FollowPath]
+/follow_waypoints [nav2_msgs/action/FollowWaypoints]
+/navigate_through_poses [nav2_msgs/action/NavigateThroughPoses]
+/navigate_to_pose [nav2_msgs/action/NavigateToPose]
+/smooth_path [nav2_msgs/action/SmoothPath]
+/spin [nav2_msgs/action/Spin]
+/wait [nav2_msgs/action/Wait]
+Waiting for an action server to become available...
+Sending goal:
+     pose:
+  header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: map
+  pose:
+    position:
+      x: 0.5
+      y: 0.0
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+behavior_tree: ''
+
+Goal accepted with ID: 608628f2cbd845c69a3b67d00cdb873e
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 323000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9638142982542368
+      y: -0.05235630021386323
+      z: 0.01001179094212103
+    orientation:
+      x: -2.237642133706914e-06
+      y: -6.220744713364081e-08
+      z: -0.006469182298531957
+      w: 0.9999790746187528
+navigation_time:
+  sec: 0
+  nanosec: 0
+estimated_time_remaining:
+  sec: 0
+  nanosec: 0
+number_of_recoveries: 0
+distance_remaining: 0.0
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 323000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9638142982542368
+      y: -0.05235630021386323
+      z: 0.01001179094212103
+    orientation:
+      x: -2.237642133706914e-06
+      y: -6.220744713364081e-08
+      z: -0.006469182298531957
+      w: 0.9999790746187528
+navigation_time:
+  sec: 0
+  nanosec: 0
+estimated_time_remaining:
+  sec: 0
+  nanosec: 0
+number_of_recoveries: 0
+distance_remaining: 0.0
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 323000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9638142982542368
+      y: -0.05235630021386323
+      z: 0.01001179094212103
+    orientation:
+      x: -2.237642133706914e-06
+      y: -6.220744713364081e-08
+      z: -0.006469182298531957
+      w: 0.9999790746187528
+navigation_time:
+  sec: 0
+  nanosec: 0
+estimated_time_remaining:
+  sec: 0
+  nanosec: 0
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 323000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9638142982542368
+      y: -0.05235630021386323
+      z: 0.01001179094212103
+    orientation:
+      x: -2.237642133706914e-06
+      y: -6.220744713364081e-08
+      z: -0.006469182298531957
+      w: 0.9999790746187528
+navigation_time:
+  sec: 0
+  nanosec: 0
+estimated_time_remaining:
+  sec: 0
+  nanosec: 0
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 357000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9638143143815963
+      y: -0.05235630019219012
+      z: 0.010010025512803469
+    orientation:
+      x: -2.2420211319623704e-06
+      y: -7.688151147216375e-07
+      z: -0.00646918187981237
+      w: 0.9999790746211583
+navigation_time:
+  sec: 0
+  nanosec: 0
+estimated_time_remaining:
+  sec: 0
+  nanosec: 0
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 357000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9638143143815963
+      y: -0.05235630019219012
+      z: 0.010010025512803469
+    orientation:
+      x: -2.2420211319623704e-06
+      y: -7.688151147216375e-07
+      z: -0.00646918187981237
+      w: 0.9999790746211583
+navigation_time:
+  sec: 0
+  nanosec: 0
+estimated_time_remaining:
+  sec: 0
+  nanosec: 0
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 357000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9638143143815963
+      y: -0.05235630019219012
+      z: 0.010010025512803469
+    orientation:
+      x: -2.2420211319623704e-06
+      y: -7.688151147216375e-07
+      z: -0.00646918187981237
+      w: 0.9999790746211583
+navigation_time:
+  sec: 0
+  nanosec: 0
+estimated_time_remaining:
+  sec: 0
+  nanosec: 0
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 357000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9638143143815963
+      y: -0.05235630019219012
+      z: 0.010010025512803469
+    orientation:
+      x: -2.2420211319623704e-06
+      y: -7.688151147216375e-07
+      z: -0.00646918187981237
+      w: 0.9999790746211583
+navigation_time:
+  sec: 0
+  nanosec: 0
+estimated_time_remaining:
+  sec: 0
+  nanosec: 0
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 391000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9638143078569972
+      y: -0.05235630052425855
+      z: 0.010007456828301262
+    orientation:
+      x: -2.2436546294105436e-06
+      y: -1.0246824575678423e-06
+      z: -0.0064691814180700465
+      w: 0.9999790746239122
+navigation_time:
+  sec: 0
+  nanosec: 100000000
+estimated_time_remaining:
+  sec: 0
+  nanosec: 0
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 391000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9638143078569972
+      y: -0.05235630052425855
+      z: 0.010007456828301262
+    orientation:
+      x: -2.2436546294105436e-06
+      y: -1.0246824575678423e-06
+      z: -0.0064691814180700465
+      w: 0.9999790746239122
+navigation_time:
+  sec: 0
+  nanosec: 100000000
+estimated_time_remaining:
+  sec: 0
+  nanosec: 0
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 391000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9638143078569972
+      y: -0.05235630052425855
+      z: 0.010007456828301262
+    orientation:
+      x: -2.2436546294105436e-06
+      y: -1.0246824575678423e-06
+      z: -0.0064691814180700465
+      w: 0.9999790746239122
+navigation_time:
+  sec: 0
+  nanosec: 100000000
+estimated_time_remaining:
+  sec: 0
+  nanosec: 0
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 425000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9638142860080172
+      y: -0.05235630092601068
+      z: 0.010005828199054736
+    orientation:
+      x: -2.2420830594765125e-06
+      y: -7.606984684493179e-07
+      z: -0.006469180967419934
+      w: 0.9999790746270671
+navigation_time:
+  sec: 0
+  nanosec: 100000000
+estimated_time_remaining:
+  sec: 0
+  nanosec: 0
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 425000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9638142860080172
+      y: -0.05235630092601068
+      z: 0.010005828199054736
+    orientation:
+      x: -2.2420830594765125e-06
+      y: -7.606984684493179e-07
+      z: -0.006469180967419934
+      w: 0.9999790746270671
+navigation_time:
+  sec: 0
+  nanosec: 100000000
+estimated_time_remaining:
+  sec: 0
+  nanosec: 0
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 425000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9638142860080172
+      y: -0.05235630092601068
+      z: 0.010005828199054736
+    orientation:
+      x: -2.2420830594765125e-06
+      y: -7.606984684493179e-07
+      z: -0.006469180967419934
+      w: 0.9999790746270671
+navigation_time:
+  sec: 0
+  nanosec: 100000000
+estimated_time_remaining:
+  sec: 0
+  nanosec: 0
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 459000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9626608126245009
+      y: -0.05237123111741682
+      z: 0.010022880435314772
+    orientation:
+      x: -2.5393900655425636e-06
+      y: -4.621405151607479e-05
+      z: -0.006468610068592749
+      w: 0.999979077251916
+navigation_time:
+  sec: 0
+  nanosec: 100000000
+estimated_time_remaining:
+  sec: 0
+  nanosec: 0
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 459000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9626608126245009
+      y: -0.05237123111741682
+      z: 0.010022880435314772
+    orientation:
+      x: -2.5393900655425636e-06
+      y: -4.621405151607479e-05
+      z: -0.006468610068592749
+      w: 0.999979077251916
+navigation_time:
+  sec: 0
+  nanosec: 100000000
+estimated_time_remaining:
+  sec: 0
+  nanosec: 0
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 459000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9626608126245009
+      y: -0.05237123111741682
+      z: 0.010022880435314772
+    orientation:
+      x: -2.5393900655425636e-06
+      y: -4.621405151607479e-05
+      z: -0.006468610068592749
+      w: 0.999979077251916
+navigation_time:
+  sec: 0
+  nanosec: 100000000
+estimated_time_remaining:
+  sec: 0
+  nanosec: 0
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 459000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9626608126245009
+      y: -0.05237123111741682
+      z: 0.010022880435314772
+    orientation:
+      x: -2.5393900655425636e-06
+      y: -4.621405151607479e-05
+      z: -0.006468610068592749
+      w: 0.999979077251916
+navigation_time:
+  sec: 0
+  nanosec: 100000000
+estimated_time_remaining:
+  sec: 0
+  nanosec: 0
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 493000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9603525450534833
+      y: -0.05240110607268328
+      z: 0.010046283824684806
+    orientation:
+      x: -3.0924366659727934e-06
+      y: -0.00013211399864504058
+      z: -0.0064682543293205315
+      w: 0.9999790718921368
+navigation_time:
+  sec: 0
+  nanosec: 200000000
+estimated_time_remaining:
+  sec: 250
+  nanosec: 262624755
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 493000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9603525450534833
+      y: -0.05240110607268328
+      z: 0.010046283824684806
+    orientation:
+      x: -3.0924366659727934e-06
+      y: -0.00013211399864504058
+      z: -0.0064682543293205315
+      w: 0.9999790718921368
+navigation_time:
+  sec: 0
+  nanosec: 200000000
+estimated_time_remaining:
+  sec: 250
+  nanosec: 262624755
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 493000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9603525450534833
+      y: -0.05240110607268328
+      z: 0.010046283824684806
+    orientation:
+      x: -3.0924366659727934e-06
+      y: -0.00013211399864504058
+      z: -0.0064682543293205315
+      w: 0.9999790718921368
+navigation_time:
+  sec: 0
+  nanosec: 200000000
+estimated_time_remaining:
+  sec: 250
+  nanosec: 262624755
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 527000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9568896542896739
+      y: -0.052445956364827295
+      z: 0.010075066838373893
+    orientation:
+      x: -3.818038028674202e-06
+      y: -0.0002473633904859886
+      z: -0.006468309245911208
+      w: 0.9999790496666793
+navigation_time:
+  sec: 0
+  nanosec: 200000000
+estimated_time_remaining:
+  sec: 124
+  nanosec: 833649016
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 527000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9568896542896739
+      y: -0.052445956364827295
+      z: 0.010075066838373893
+    orientation:
+      x: -3.818038028674202e-06
+      y: -0.0002473633904859886
+      z: -0.006468309245911208
+      w: 0.9999790496666793
+navigation_time:
+  sec: 0
+  nanosec: 200000000
+estimated_time_remaining:
+  sec: 124
+  nanosec: 833649016
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 527000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9568896542896739
+      y: -0.052445956364827295
+      z: 0.010075066838373893
+    orientation:
+      x: -3.818038028674202e-06
+      y: -0.0002473633904859886
+      z: -0.006468309245911208
+      w: 0.9999790496666793
+navigation_time:
+  sec: 0
+  nanosec: 200000000
+estimated_time_remaining:
+  sec: 124
+  nanosec: 833649016
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 527000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9568896542896739
+      y: -0.052445956364827295
+      z: 0.010075066838373893
+    orientation:
+      x: -3.818038028674202e-06
+      y: -0.0002473633904859886
+      z: -0.006468309245911208
+      w: 0.9999790496666793
+navigation_time:
+  sec: 0
+  nanosec: 200000000
+estimated_time_remaining:
+  sec: 124
+  nanosec: 833649016
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 561000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9522719038823109
+      y: -0.052505736795406266
+      z: 0.010102000279716604
+    orientation:
+      x: -4.6601508383763745e-06
+      y: -0.0003891022788350155
+      z: -0.006467972432301719
+      w: 0.9999790067347988
+navigation_time:
+  sec: 0
+  nanosec: 200000000
+estimated_time_remaining:
+  sec: 74
+  nanosec: 801583892
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 561000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9522719038823109
+      y: -0.052505736795406266
+      z: 0.010102000279716604
+    orientation:
+      x: -4.6601508383763745e-06
+      y: -0.0003891022788350155
+      z: -0.006467972432301719
+      w: 0.9999790067347988
+navigation_time:
+  sec: 0
+  nanosec: 200000000
+estimated_time_remaining:
+  sec: 74
+  nanosec: 801583892
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 561000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9522719038823109
+      y: -0.052505736795406266
+      z: 0.010102000279716604
+    orientation:
+      x: -4.6601508383763745e-06
+      y: -0.0003891022788350155
+      z: -0.006467972432301719
+      w: 0.9999790067347988
+navigation_time:
+  sec: 0
+  nanosec: 200000000
+estimated_time_remaining:
+  sec: 74
+  nanosec: 801583892
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 595000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9465193544639938
+      y: -0.05258041968132404
+      z: 0.010135183718317814
+    orientation:
+      x: -5.145626821034458e-06
+      y: -0.0005564287665228803
+      z: -0.006536044996039042
+      w: 0.9999784850067327
+navigation_time:
+  sec: 0
+  nanosec: 300000000
+estimated_time_remaining:
+  sec: 49
+  nanosec: 883639182
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 595000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9465193544639938
+      y: -0.05258041968132404
+      z: 0.010135183718317814
+    orientation:
+      x: -5.145626821034458e-06
+      y: -0.0005564287665228803
+      z: -0.006536044996039042
+      w: 0.9999784850067327
+navigation_time:
+  sec: 0
+  nanosec: 300000000
+estimated_time_remaining:
+  sec: 49
+  nanosec: 883639182
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 595000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9465193544639938
+      y: -0.05258041968132404
+      z: 0.010135183718317814
+    orientation:
+      x: -5.145626821034458e-06
+      y: -0.0005564287665228803
+      z: -0.006536044996039042
+      w: 0.9999784850067327
+navigation_time:
+  sec: 0
+  nanosec: 300000000
+estimated_time_remaining:
+  sec: 49
+  nanosec: 883639182
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 629000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9403959096866301
+      y: -0.052672203685493246
+      z: 0.010170254047397695
+    orientation:
+      x: 1.328005405302251e-05
+      y: -0.0007187755125756193
+      z: -0.009428390429045044
+      w: 0.9999552933203165
+navigation_time:
+  sec: 0
+  nanosec: 300000000
+estimated_time_remaining:
+  sec: 36
+  nanosec: 788444547
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 629000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9403959096866301
+      y: -0.052672203685493246
+      z: 0.010170254047397695
+    orientation:
+      x: 1.328005405302251e-05
+      y: -0.0007187755125756193
+      z: -0.009428390429045044
+      w: 0.9999552933203165
+navigation_time:
+  sec: 0
+  nanosec: 300000000
+estimated_time_remaining:
+  sec: 36
+  nanosec: 788444547
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 629000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9403959096866301
+      y: -0.052672203685493246
+      z: 0.010170254047397695
+    orientation:
+      x: 1.328005405302251e-05
+      y: -0.0007187755125756193
+      z: -0.009428390429045044
+      w: 0.9999552933203165
+navigation_time:
+  sec: 0
+  nanosec: 300000000
+estimated_time_remaining:
+  sec: 36
+  nanosec: 788444547
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 629000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9403959096866301
+      y: -0.052672203685493246
+      z: 0.010170254047397695
+    orientation:
+      x: 1.328005405302251e-05
+      y: -0.0007187755125756193
+      z: -0.009428390429045044
+      w: 0.9999552933203165
+navigation_time:
+  sec: 0
+  nanosec: 300000000
+estimated_time_remaining:
+  sec: 36
+  nanosec: 788444547
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 663000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.933688837983709
+      y: -0.052855774365140884
+      z: 0.010208724572259511
+    orientation:
+      x: 7.565394809255638e-05
+      y: -0.0008845880892437157
+      z: -0.01908561294033293
+      w: 0.9998174589189192
+navigation_time:
+  sec: 0
+  nanosec: 300000000
+estimated_time_remaining:
+  sec: 28
+  nanosec: 586645884
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 663000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.933688837983709
+      y: -0.052855774365140884
+      z: 0.010208724572259511
+    orientation:
+      x: 7.565394809255638e-05
+      y: -0.0008845880892437157
+      z: -0.01908561294033293
+      w: 0.9998174589189192
+navigation_time:
+  sec: 0
+  nanosec: 300000000
+estimated_time_remaining:
+  sec: 28
+  nanosec: 586645884
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 663000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.933688837983709
+      y: -0.052855774365140884
+      z: 0.010208724572259511
+    orientation:
+      x: 7.565394809255638e-05
+      y: -0.0008845880892437157
+      z: -0.01908561294033293
+      w: 0.9998174589189192
+navigation_time:
+  sec: 0
+  nanosec: 300000000
+estimated_time_remaining:
+  sec: 28
+  nanosec: 586645884
+number_of_recoveries: 0
+distance_remaining: 2.812387466430664
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 697000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9265161614595414
+      y: -0.05322355658371769
+      z: 0.010249865004642467
+    orientation:
+      x: 0.00015864513361394552
+      y: -0.0010493026007089444
+      z: -0.0326857376488004
+      w: 0.9994651151241486
+navigation_time:
+  sec: 0
+  nanosec: 300000000
+estimated_time_remaining:
+  sec: 22
+  nanosec: 739346820
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 697000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9265161614595414
+      y: -0.05322355658371769
+      z: 0.010249865004642467
+    orientation:
+      x: 0.00015864513361394552
+      y: -0.0010493026007089444
+      z: -0.0326857376488004
+      w: 0.9994651151241486
+navigation_time:
+  sec: 0
+  nanosec: 400000000
+estimated_time_remaining:
+  sec: 22
+  nanosec: 739346820
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 697000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9265161614595414
+      y: -0.05322355658371769
+      z: 0.010249865004642467
+    orientation:
+      x: 0.00015864513361394552
+      y: -0.0010493026007089444
+      z: -0.0326857376488004
+      w: 0.9994651151241486
+navigation_time:
+  sec: 0
+  nanosec: 400000000
+estimated_time_remaining:
+  sec: 22
+  nanosec: 739346820
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 697000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9265161614595414
+      y: -0.05322355658371769
+      z: 0.010249865004642467
+    orientation:
+      x: 0.00015864513361394552
+      y: -0.0010493026007089444
+      z: -0.0326857376488004
+      w: 0.9994651151241486
+navigation_time:
+  sec: 0
+  nanosec: 400000000
+estimated_time_remaining:
+  sec: 22
+  nanosec: 739346820
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 731000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9194042684615014
+      y: -0.05379302015417109
+      z: 0.010290529961686942
+    orientation:
+      x: 0.00024091156007637572
+      y: -0.0011921359551359417
+      z: -0.047125425404327105
+      w: 0.998888239521292
+navigation_time:
+  sec: 0
+  nanosec: 400000000
+estimated_time_remaining:
+  sec: 19
+  nanosec: 90229655
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 731000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9194042684615014
+      y: -0.05379302015417109
+      z: 0.010290529961686942
+    orientation:
+      x: 0.00024091156007637572
+      y: -0.0011921359551359417
+      z: -0.047125425404327105
+      w: 0.998888239521292
+navigation_time:
+  sec: 0
+  nanosec: 400000000
+estimated_time_remaining:
+  sec: 19
+  nanosec: 90229655
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 731000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.9194042684615014
+      y: -0.05379302015417109
+      z: 0.010290529961686942
+    orientation:
+      x: 0.00024091156007637572
+      y: -0.0011921359551359417
+      z: -0.047125425404327105
+      w: 0.998888239521292
+navigation_time:
+  sec: 0
+  nanosec: 400000000
+estimated_time_remaining:
+  sec: 19
+  nanosec: 90229655
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 765000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.912314778255712
+      y: -0.05455874130931626
+      z: 0.010331124936986052
+    orientation:
+      x: 0.0003107743486779395
+      y: -0.00131475225114461
+      z: -0.06025336547138034
+      w: 0.9981822012013611
+navigation_time:
+  sec: 0
+  nanosec: 400000000
+estimated_time_remaining:
+  sec: 16
+  nanosec: 822940880
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 765000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.912314778255712
+      y: -0.05455874130931626
+      z: 0.010331124936986052
+    orientation:
+      x: 0.0003107743486779395
+      y: -0.00131475225114461
+      z: -0.06025336547138034
+      w: 0.9981822012013611
+navigation_time:
+  sec: 0
+  nanosec: 400000000
+estimated_time_remaining:
+  sec: 16
+  nanosec: 822940880
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 765000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.912314778255712
+      y: -0.05455874130931626
+      z: 0.010331124936986052
+    orientation:
+      x: 0.0003107743486779395
+      y: -0.00131475225114461
+      z: -0.06025336547138034
+      w: 0.9981822012013611
+navigation_time:
+  sec: 0
+  nanosec: 400000000
+estimated_time_remaining:
+  sec: 16
+  nanosec: 822940880
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 799000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.905247180298379
+      y: -0.05550739778234476
+      z: 0.010371628398743319
+    orientation:
+      x: 0.00037595451328209
+      y: -0.0014169966736264524
+      z: -0.07328731302787954
+      w: 0.9973097916534182
+navigation_time:
+  sec: 0
+  nanosec: 500000000
+estimated_time_remaining:
+  sec: 15
+  nanosec: 352010944
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 799000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.905247180298379
+      y: -0.05550739778234476
+      z: 0.010371628398743319
+    orientation:
+      x: 0.00037595451328209
+      y: -0.0014169966736264524
+      z: -0.07328731302787954
+      w: 0.9973097916534182
+navigation_time:
+  sec: 0
+  nanosec: 500000000
+estimated_time_remaining:
+  sec: 15
+  nanosec: 352010944
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 799000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.905247180298379
+      y: -0.05550739778234476
+      z: 0.010371628398743319
+    orientation:
+      x: 0.00037595451328209
+      y: -0.0014169966736264524
+      z: -0.07328731302787954
+      w: 0.9973097916534182
+navigation_time:
+  sec: 0
+  nanosec: 500000000
+estimated_time_remaining:
+  sec: 15
+  nanosec: 352010944
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 799000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.905247180298379
+      y: -0.05550739778234476
+      z: 0.010371628398743319
+    orientation:
+      x: 0.00037595451328209
+      y: -0.0014169966736264524
+      z: -0.07328731302787954
+      w: 0.9973097916534182
+navigation_time:
+  sec: 0
+  nanosec: 500000000
+estimated_time_remaining:
+  sec: 15
+  nanosec: 352010944
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 833000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8977640702177203
+      y: -0.05671900306425354
+      z: 0.010414702087467826
+    orientation:
+      x: 0.00043929173130102675
+      y: -0.0015163192425295493
+      z: -0.08738625959777077
+      w: 0.9961732527187429
+navigation_time:
+  sec: 0
+  nanosec: 500000000
+estimated_time_remaining:
+  sec: 14
+  nanosec: 285879588
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 833000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8977640702177203
+      y: -0.05671900306425354
+      z: 0.010414702087467826
+    orientation:
+      x: 0.00043929173130102675
+      y: -0.0015163192425295493
+      z: -0.08738625959777077
+      w: 0.9961732527187429
+navigation_time:
+  sec: 0
+  nanosec: 500000000
+estimated_time_remaining:
+  sec: 14
+  nanosec: 285879588
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 833000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8977640702177203
+      y: -0.05671900306425354
+      z: 0.010414702087467826
+    orientation:
+      x: 0.00043929173130102675
+      y: -0.0015163192425295493
+      z: -0.08738625959777077
+      w: 0.9961732527187429
+navigation_time:
+  sec: 0
+  nanosec: 500000000
+estimated_time_remaining:
+  sec: 14
+  nanosec: 285879588
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 867000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8903671896007537
+      y: -0.05813806579075931
+      z: 0.01045716665822823
+    orientation:
+      x: 0.0004980618721470983
+      y: -0.0015929371565069426
+      z: -0.10204183149411523
+      w: 0.9947787086135859
+navigation_time:
+  sec: 0
+  nanosec: 500000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 617558409
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 867000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8903671896007537
+      y: -0.05813806579075931
+      z: 0.01045716665822823
+    orientation:
+      x: 0.0004980618721470983
+      y: -0.0015929371565069426
+      z: -0.10204183149411523
+      w: 0.9947787086135859
+navigation_time:
+  sec: 0
+  nanosec: 500000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 617558409
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 867000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8903671896007537
+      y: -0.05813806579075931
+      z: 0.01045716665822823
+    orientation:
+      x: 0.0004980618721470983
+      y: -0.0015929371565069426
+      z: -0.10204183149411523
+      w: 0.9947787086135859
+navigation_time:
+  sec: 0
+  nanosec: 500000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 617558409
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 867000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8903671896007537
+      y: -0.05813806579075931
+      z: 0.01045716665822823
+    orientation:
+      x: 0.0004980618721470983
+      y: -0.0015929371565069426
+      z: -0.10204183149411523
+      w: 0.9947787086135859
+navigation_time:
+  sec: 0
+  nanosec: 600000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 617558409
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 901000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.883015240821442
+      y: -0.059772084228710276
+      z: 0.010499436831498392
+    orientation:
+      x: 0.0005466359643411895
+      y: -0.0016492509931288935
+      z: -0.11634608120869432
+      w: 0.9932072143050835
+navigation_time:
+  sec: 0
+  nanosec: 600000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 240454910
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 901000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.883015240821442
+      y: -0.059772084228710276
+      z: 0.010499436831498392
+    orientation:
+      x: 0.0005466359643411895
+      y: -0.0016492509931288935
+      z: -0.11634608120869432
+      w: 0.9932072143050835
+navigation_time:
+  sec: 0
+  nanosec: 600000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 240454910
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 901000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.883015240821442
+      y: -0.059772084228710276
+      z: 0.010499436831498392
+    orientation:
+      x: 0.0005466359643411895
+      y: -0.0016492509931288935
+      z: -0.11634608120869432
+      w: 0.9932072143050835
+navigation_time:
+  sec: 0
+  nanosec: 600000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 240454910
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 935000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8763958312771822
+      y: -0.06143561996754038
+      z: 0.01053729738311266
+    orientation:
+      x: 0.0005816665025922383
+      y: -0.0016583687844075423
+      z: -0.1289372781923027
+      w: 0.99165119360056
+navigation_time:
+  sec: 0
+  nanosec: 600000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 104734545
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 935000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8763958312771822
+      y: -0.06143561996754038
+      z: 0.01053729738311266
+    orientation:
+      x: 0.0005816665025922383
+      y: -0.0016583687844075423
+      z: -0.1289372781923027
+      w: 0.99165119360056
+navigation_time:
+  sec: 0
+  nanosec: 600000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 104734545
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 935000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8763958312771822
+      y: -0.06143561996754038
+      z: 0.01053729738311266
+    orientation:
+      x: 0.0005816665025922383
+      y: -0.0016583687844075423
+      z: -0.1289372781923027
+      w: 0.99165119360056
+navigation_time:
+  sec: 0
+  nanosec: 600000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 104734545
+number_of_recoveries: 0
+distance_remaining: 2.7707102298736572
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 969000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8699080776075232
+      y: -0.06321839677430058
+      z: 0.010574654522578227
+    orientation:
+      x: 0.0005928707079129812
+      y: -0.0016457890422238222
+      z: -0.13817009064240518
+      w: 0.9904069698536162
+navigation_time:
+  sec: 0
+  nanosec: 600000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 986658697
+number_of_recoveries: 0
+distance_remaining: 2.7457098960876465
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 969000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8699080776075232
+      y: -0.06321839677430058
+      z: 0.010574654522578227
+    orientation:
+      x: 0.0005928707079129812
+      y: -0.0016457890422238222
+      z: -0.13817009064240518
+      w: 0.9904069698536162
+navigation_time:
+  sec: 0
+  nanosec: 600000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 986658697
+number_of_recoveries: 0
+distance_remaining: 2.7457098960876465
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 969000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8699080776075232
+      y: -0.06321839677430058
+      z: 0.010574654522578227
+    orientation:
+      x: 0.0005928707079129812
+      y: -0.0016457890422238222
+      z: -0.13817009064240518
+      w: 0.9904069698536162
+navigation_time:
+  sec: 0
+  nanosec: 600000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 986658697
+number_of_recoveries: 0
+distance_remaining: 2.7457098960876465
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30538
+      nanosec: 969000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8699080776075232
+      y: -0.06321839677430058
+      z: 0.010574654522578227
+    orientation:
+      x: 0.0005928707079129812
+      y: -0.0016457890422238222
+      z: -0.13817009064240518
+      w: 0.9904069698536162
+navigation_time:
+  sec: 0
+  nanosec: 700000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 986658697
+number_of_recoveries: 0
+distance_remaining: 2.7457098960876465
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 3000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8634537202335941
+      y: -0.06511299098777223
+      z: 0.010611879651007315
+    orientation:
+      x: 0.0005957369677309105
+      y: -0.0016151348170957756
+      z: -0.14694275035050333
+      w: 0.989143500487375
+navigation_time:
+  sec: 0
+  nanosec: 700000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 80696236
+number_of_recoveries: 0
+distance_remaining: 2.7457098960876465
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 3000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8634537202335941
+      y: -0.06511299098777223
+      z: 0.010611879651007315
+    orientation:
+      x: 0.0005957369677309105
+      y: -0.0016151348170957756
+      z: -0.14694275035050333
+      w: 0.989143500487375
+navigation_time:
+  sec: 0
+  nanosec: 700000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 80696236
+number_of_recoveries: 0
+distance_remaining: 2.7457098960876465
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 3000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8634537202335941
+      y: -0.06511299098777223
+      z: 0.010611879651007315
+    orientation:
+      x: 0.0005957369677309105
+      y: -0.0016151348170957756
+      z: -0.14694275035050333
+      w: 0.989143500487375
+navigation_time:
+  sec: 0
+  nanosec: 700000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 80696236
+number_of_recoveries: 0
+distance_remaining: 2.7457098960876465
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 37000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8566542050401487
+      y: -0.0672561583308307
+      z: 0.010651231678709058
+    orientation:
+      x: 0.000601051046929588
+      y: -0.0015818240255214568
+      z: -0.15796871815024519
+      w: 0.9874426670224251
+navigation_time:
+  sec: 0
+  nanosec: 700000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 83002181
+number_of_recoveries: 0
+distance_remaining: 2.7457098960876465
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 37000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8566542050401487
+      y: -0.0672561583308307
+      z: 0.010651231678709058
+    orientation:
+      x: 0.000601051046929588
+      y: -0.0015818240255214568
+      z: -0.15796871815024519
+      w: 0.9874426670224251
+navigation_time:
+  sec: 0
+  nanosec: 700000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 83002181
+number_of_recoveries: 0
+distance_remaining: 2.7457098960876465
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 37000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8566542050401487
+      y: -0.0672561583308307
+      z: 0.010651231678709058
+    orientation:
+      x: 0.000601051046929588
+      y: -0.0015818240255214568
+      z: -0.15796871815024519
+      w: 0.9874426670224251
+navigation_time:
+  sec: 0
+  nanosec: 700000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 83002181
+number_of_recoveries: 0
+distance_remaining: 2.7457098960876465
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 37000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8566542050401487
+      y: -0.0672561583308307
+      z: 0.010651231678709058
+    orientation:
+      x: 0.000601051046929588
+      y: -0.0015818240255214568
+      z: -0.15796871815024519
+      w: 0.9874426670224251
+navigation_time:
+  sec: 0
+  nanosec: 700000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 83002181
+number_of_recoveries: 0
+distance_remaining: 2.7457098960876465
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 71000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8499041126334417
+      y: -0.06955914799699031
+      z: 0.01069022566583689
+    orientation:
+      x: 0.0006022095116017962
+      y: -0.0015303996926308843
+      z: -0.16960077321522743
+      w: 0.9855114778353837
+navigation_time:
+  sec: 0
+  nanosec: 700000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 966043238
+number_of_recoveries: 0
+distance_remaining: 2.720710039138794
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 71000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8499041126334417
+      y: -0.06955914799699031
+      z: 0.01069022566583689
+    orientation:
+      x: 0.0006022095116017962
+      y: -0.0015303996926308843
+      z: -0.16960077321522743
+      w: 0.9855114778353837
+navigation_time:
+  sec: 0
+  nanosec: 700000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 966043238
+number_of_recoveries: 0
+distance_remaining: 2.720710039138794
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 71000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8499041126334417
+      y: -0.06955914799699031
+      z: 0.01069022566583689
+    orientation:
+      x: 0.0006022095116017962
+      y: -0.0015303996926308843
+      z: -0.16960077321522743
+      w: 0.9855114778353837
+navigation_time:
+  sec: 0
+  nanosec: 800000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 966043238
+number_of_recoveries: 0
+distance_remaining: 2.720710039138794
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 105000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8432107764575183
+      y: -0.07201066895071578
+      z: 0.010728928002752963
+    orientation:
+      x: 0.000591199387856552
+      y: -0.0014611807740721678
+      z: -0.17995380290546267
+      w: 0.9836737997191402
+navigation_time:
+  sec: 0
+  nanosec: 800000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 969338804
+number_of_recoveries: 0
+distance_remaining: 2.720710039138794
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 105000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8432107764575183
+      y: -0.07201066895071578
+      z: 0.010728928002752963
+    orientation:
+      x: 0.000591199387856552
+      y: -0.0014611807740721678
+      z: -0.17995380290546267
+      w: 0.9836737997191402
+navigation_time:
+  sec: 0
+  nanosec: 800000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 969338804
+number_of_recoveries: 0
+distance_remaining: 2.720710039138794
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 105000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8432107764575183
+      y: -0.07201066895071578
+      z: 0.010728928002752963
+    orientation:
+      x: 0.000591199387856552
+      y: -0.0014611807740721678
+      z: -0.17995380290546267
+      w: 0.9836737997191402
+navigation_time:
+  sec: 0
+  nanosec: 800000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 969338804
+number_of_recoveries: 0
+distance_remaining: 2.720710039138794
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 139000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.836204919166397
+      y: -0.07473483913369172
+      z: 0.010769571069263828
+    orientation:
+      x: 0.0005659818850838709
+      y: -0.0013898685761225991
+      z: -0.1888037035014239
+      w: 0.982013701265921
+navigation_time:
+  sec: 0
+  nanosec: 800000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 985372332
+number_of_recoveries: 0
+distance_remaining: 2.720710039138794
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 139000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.836204919166397
+      y: -0.07473483913369172
+      z: 0.010769571069263828
+    orientation:
+      x: 0.0005659818850838709
+      y: -0.0013898685761225991
+      z: -0.1888037035014239
+      w: 0.982013701265921
+navigation_time:
+  sec: 0
+  nanosec: 800000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 985372332
+number_of_recoveries: 0
+distance_remaining: 2.720710039138794
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 139000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.836204919166397
+      y: -0.07473483913369172
+      z: 0.010769571069263828
+    orientation:
+      x: 0.0005659818850838709
+      y: -0.0013898685761225991
+      z: -0.1888037035014239
+      w: 0.982013701265921
+navigation_time:
+  sec: 0
+  nanosec: 800000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 985372332
+number_of_recoveries: 0
+distance_remaining: 2.720710039138794
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 139000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.836204919166397
+      y: -0.07473483913369172
+      z: 0.010769571069263828
+    orientation:
+      x: 0.0005659818850838709
+      y: -0.0013898685761225991
+      z: -0.1888037035014239
+      w: 0.982013701265921
+navigation_time:
+  sec: 0
+  nanosec: 800000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 985372332
+number_of_recoveries: 0
+distance_remaining: 2.720710039138794
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 173000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8292532734221894
+      y: -0.07755713097443301
+      z: 0.010809809964232687
+    orientation:
+      x: 0.0005228572494154147
+      y: -0.0013011476402245347
+      z: -0.19426263799129273
+      w: 0.9809485517170504
+navigation_time:
+  sec: 0
+  nanosec: 800000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 991737895
+number_of_recoveries: 0
+distance_remaining: 2.720710039138794
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 173000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8292532734221894
+      y: -0.07755713097443301
+      z: 0.010809809964232687
+    orientation:
+      x: 0.0005228572494154147
+      y: -0.0013011476402245347
+      z: -0.19426263799129273
+      w: 0.9809485517170504
+navigation_time:
+  sec: 0
+  nanosec: 800000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 991737895
+number_of_recoveries: 0
+distance_remaining: 2.720710039138794
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 173000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8292532734221894
+      y: -0.07755713097443301
+      z: 0.010809809964232687
+    orientation:
+      x: 0.0005228572494154147
+      y: -0.0013011476402245347
+      z: -0.19426263799129273
+      w: 0.9809485517170504
+navigation_time:
+  sec: 0
+  nanosec: 800000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 991737895
+number_of_recoveries: 0
+distance_remaining: 2.720710039138794
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 207000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8223319334185433
+      y: -0.08042958222645513
+      z: 0.010849883630913926
+    orientation:
+      x: 0.00046708961417963636
+      y: -0.0011957313945282178
+      z: -0.1966783693705275
+      w: 0.980467220806221
+navigation_time:
+  sec: 0
+  nanosec: 900000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 140703
+number_of_recoveries: 0
+distance_remaining: 2.720710039138794
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 207000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8223319334185433
+      y: -0.08042958222645513
+      z: 0.010849883630913926
+    orientation:
+      x: 0.00046708961417963636
+      y: -0.0011957313945282178
+      z: -0.1966783693705275
+      w: 0.980467220806221
+navigation_time:
+  sec: 0
+  nanosec: 900000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 140703
+number_of_recoveries: 0
+distance_remaining: 2.720710039138794
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 207000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8223319334185433
+      y: -0.08042958222645513
+      z: 0.010849883630913926
+    orientation:
+      x: 0.00046708961417963636
+      y: -0.0011957313945282178
+      z: -0.1966783693705275
+      w: 0.980467220806221
+navigation_time:
+  sec: 0
+  nanosec: 900000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 140703
+number_of_recoveries: 0
+distance_remaining: 2.720710039138794
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 207000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8223319334185433
+      y: -0.08042958222645513
+      z: 0.010849883630913926
+    orientation:
+      x: 0.00046708961417963636
+      y: -0.0011957313945282178
+      z: -0.1966783693705275
+      w: 0.980467220806221
+navigation_time:
+  sec: 0
+  nanosec: 900000000
+estimated_time_remaining:
+  sec: 13
+  nanosec: 140703
+number_of_recoveries: 0
+distance_remaining: 2.720710039138794
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 241000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8154222178158304
+      y: -0.08332944860053537
+      z: 0.010889910127760517
+    orientation:
+      x: 0.0004142173180110544
+      y: -0.0010748134945979338
+      z: -0.19874792204602354
+      w: 0.9800499664212805
+navigation_time:
+  sec: 0
+  nanosec: 900000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 747588225
+number_of_recoveries: 0
+distance_remaining: 2.6957104206085205
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 241000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8154222178158304
+      y: -0.08332944860053537
+      z: 0.010889910127760517
+    orientation:
+      x: 0.0004142173180110544
+      y: -0.0010748134945979338
+      z: -0.19874792204602354
+      w: 0.9800499664212805
+navigation_time:
+  sec: 0
+  nanosec: 900000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 747588225
+number_of_recoveries: 0
+distance_remaining: 2.6957104206085205
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 241000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8154222178158304
+      y: -0.08332944860053537
+      z: 0.010889910127760517
+    orientation:
+      x: 0.0004142173180110544
+      y: -0.0010748134945979338
+      z: -0.19874792204602354
+      w: 0.9800499664212805
+navigation_time:
+  sec: 0
+  nanosec: 900000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 747588225
+number_of_recoveries: 0
+distance_remaining: 2.6957104206085205
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 275000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8085257889672666
+      y: -0.08627050426401328
+      z: 0.010929870292325946
+    orientation:
+      x: 0.00037323430659885916
+      y: -0.0009392057938576179
+      z: -0.20228131226390225
+      w: 0.9793269368793155
+navigation_time:
+  sec: 0
+  nanosec: 900000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 597393408
+number_of_recoveries: 0
+distance_remaining: 2.6957104206085205
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 275000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8085257889672666
+      y: -0.08627050426401328
+      z: 0.010929870292325946
+    orientation:
+      x: 0.00037323430659885916
+      y: -0.0009392057938576179
+      z: -0.20228131226390225
+      w: 0.9793269368793155
+navigation_time:
+  sec: 0
+  nanosec: 900000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 597393408
+number_of_recoveries: 0
+distance_remaining: 2.6957104206085205
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 275000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8085257889672666
+      y: -0.08627050426401328
+      z: 0.010929870292325946
+    orientation:
+      x: 0.00037323430659885916
+      y: -0.0009392057938576179
+      z: -0.20228131226390225
+      w: 0.9793269368793155
+navigation_time:
+  sec: 0
+  nanosec: 900000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 597393408
+number_of_recoveries: 0
+distance_remaining: 2.6957104206085205
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 309000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8016548954872995
+      y: -0.08925366313880378
+      z: 0.010969658308733744
+    orientation:
+      x: 0.00032747809569225563
+      y: -0.0007872643623046813
+      z: -0.20420451937888942
+      w: 0.9789278764230578
+navigation_time:
+  sec: 1
+  nanosec: 0
+estimated_time_remaining:
+  sec: 12
+  nanosec: 451997342
+number_of_recoveries: 0
+distance_remaining: 2.6957104206085205
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 309000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8016548954872995
+      y: -0.08925366313880378
+      z: 0.010969658308733744
+    orientation:
+      x: 0.00032747809569225563
+      y: -0.0007872643623046813
+      z: -0.20420451937888942
+      w: 0.9789278764230578
+navigation_time:
+  sec: 1
+  nanosec: 0
+estimated_time_remaining:
+  sec: 12
+  nanosec: 451997342
+number_of_recoveries: 0
+distance_remaining: 2.6957104206085205
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 309000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8016548954872995
+      y: -0.08925366313880378
+      z: 0.010969658308733744
+    orientation:
+      x: 0.00032747809569225563
+      y: -0.0007872643623046813
+      z: -0.20420451937888942
+      w: 0.9789278764230578
+navigation_time:
+  sec: 1
+  nanosec: 0
+estimated_time_remaining:
+  sec: 12
+  nanosec: 451997342
+number_of_recoveries: 0
+distance_remaining: 2.6957104206085205
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 309000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.8016548954872995
+      y: -0.08925366313880378
+      z: 0.010969658308733744
+    orientation:
+      x: 0.00032747809569225563
+      y: -0.0007872643623046813
+      z: -0.20420451937888942
+      w: 0.9789278764230578
+navigation_time:
+  sec: 1
+  nanosec: 0
+estimated_time_remaining:
+  sec: 12
+  nanosec: 451997342
+number_of_recoveries: 0
+distance_remaining: 2.6957104206085205
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 343000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7947901897663525
+      y: -0.09223474397576775
+      z: 0.011009426440952895
+    orientation:
+      x: 0.0002702657792155172
+      y: -0.0006184092144560249
+      z: -0.20284843276603948
+      w: 0.9792099151105514
+navigation_time:
+  sec: 1
+  nanosec: 0
+estimated_time_remaining:
+  sec: 12
+  nanosec: 387449425
+number_of_recoveries: 0
+distance_remaining: 2.6957104206085205
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 343000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7947901897663525
+      y: -0.09223474397576775
+      z: 0.011009426440952895
+    orientation:
+      x: 0.0002702657792155172
+      y: -0.0006184092144560249
+      z: -0.20284843276603948
+      w: 0.9792099151105514
+navigation_time:
+  sec: 1
+  nanosec: 0
+estimated_time_remaining:
+  sec: 12
+  nanosec: 387449425
+number_of_recoveries: 0
+distance_remaining: 2.6957104206085205
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 343000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7947901897663525
+      y: -0.09223474397576775
+      z: 0.011009426440952895
+    orientation:
+      x: 0.0002702657792155172
+      y: -0.0006184092144560249
+      z: -0.20284843276603948
+      w: 0.9792099151105514
+navigation_time:
+  sec: 1
+  nanosec: 0
+estimated_time_remaining:
+  sec: 12
+  nanosec: 522635259
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 377000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.787916550635141
+      y: -0.0952034125590363
+      z: 0.011049281927370692
+    orientation:
+      x: 0.00022901722768375106
+      y: -0.00043638135271220716
+      z: -0.20289593393639258
+      w: 0.9792001823501175
+navigation_time:
+  sec: 1
+  nanosec: 0
+estimated_time_remaining:
+  sec: 12
+  nanosec: 456846828
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 377000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.787916550635141
+      y: -0.0952034125590363
+      z: 0.011049281927370692
+    orientation:
+      x: 0.00022901722768375106
+      y: -0.00043638135271220716
+      z: -0.20289593393639258
+      w: 0.9792001823501175
+navigation_time:
+  sec: 1
+  nanosec: 0
+estimated_time_remaining:
+  sec: 12
+  nanosec: 456846828
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 377000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.787916550635141
+      y: -0.0952034125590363
+      z: 0.011049281927370692
+    orientation:
+      x: 0.00022901722768375106
+      y: -0.00043638135271220716
+      z: -0.20289593393639258
+      w: 0.9792001823501175
+navigation_time:
+  sec: 1
+  nanosec: 0
+estimated_time_remaining:
+  sec: 12
+  nanosec: 456846828
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 377000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.787916550635141
+      y: -0.0952034125590363
+      z: 0.011049281927370692
+    orientation:
+      x: 0.00022901722768375106
+      y: -0.00043638135271220716
+      z: -0.20289593393639258
+      w: 0.9792001823501175
+navigation_time:
+  sec: 1
+  nanosec: 100000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 456846828
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 411000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7810441428244639
+      y: -0.09819088508785645
+      z: 0.011089130704317947
+    orientation:
+      x: 0.00020508572508435782
+      y: -0.00024160019645801667
+      z: -0.204881490860372
+      w: 0.9787867358480199
+navigation_time:
+  sec: 1
+  nanosec: 100000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 389012245
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 411000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7810441428244639
+      y: -0.09819088508785645
+      z: 0.011089130704317947
+    orientation:
+      x: 0.00020508572508435782
+      y: -0.00024160019645801667
+      z: -0.204881490860372
+      w: 0.9787867358480199
+navigation_time:
+  sec: 1
+  nanosec: 100000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 389012245
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 411000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7810441428244639
+      y: -0.09819088508785645
+      z: 0.011089130704317947
+    orientation:
+      x: 0.00020508572508435782
+      y: -0.00024160019645801667
+      z: -0.204881490860372
+      w: 0.9787867358480199
+navigation_time:
+  sec: 1
+  nanosec: 100000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 389012245
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 445000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.774184022131392
+      y: -0.10120652129948282
+      z: 0.01112889445552822
+    orientation:
+      x: 0.00018420932098618315
+      y: -3.188716986149329e-05
+      z: -0.20652697981238702
+      w: 0.9784408881785901
+navigation_time:
+  sec: 1
+  nanosec: 100000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 392592806
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 445000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.774184022131392
+      y: -0.10120652129948282
+      z: 0.01112889445552822
+    orientation:
+      x: 0.00018420932098618315
+      y: -3.188716986149329e-05
+      z: -0.20652697981238702
+      w: 0.9784408881785901
+navigation_time:
+  sec: 1
+  nanosec: 100000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 392592806
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 445000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.774184022131392
+      y: -0.10120652129948282
+      z: 0.01112889445552822
+    orientation:
+      x: 0.00018420932098618315
+      y: -3.188716986149329e-05
+      z: -0.20652697981238702
+      w: 0.9784408881785901
+navigation_time:
+  sec: 1
+  nanosec: 100000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 392592806
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 479000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7673322687522879
+      y: -0.10423773010086745
+      z: 0.011142583955199677
+    orientation:
+      x: 0.00016291914923420808
+      y: 0.00018596408001070864
+      z: -0.20731839492662535
+      w: 0.9782734903899623
+navigation_time:
+  sec: 1
+  nanosec: 100000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 396854960
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 479000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7673322687522879
+      y: -0.10423773010086745
+      z: 0.011142583955199677
+    orientation:
+      x: 0.00016291914923420808
+      y: 0.00018596408001070864
+      z: -0.20731839492662535
+      w: 0.9782734903899623
+navigation_time:
+  sec: 1
+  nanosec: 100000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 396854960
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 479000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7673322687522879
+      y: -0.10423773010086745
+      z: 0.011142583955199677
+    orientation:
+      x: 0.00016291914923420808
+      y: 0.00018596408001070864
+      z: -0.20731839492662535
+      w: 0.9782734903899623
+navigation_time:
+  sec: 1
+  nanosec: 100000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 396854960
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 479000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7673322687522879
+      y: -0.10423773010086745
+      z: 0.011142583955199677
+    orientation:
+      x: 0.00016291914923420808
+      y: 0.00018596408001070864
+      z: -0.20731839492662535
+      w: 0.9782734903899623
+navigation_time:
+  sec: 1
+  nanosec: 200000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 396854960
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 513000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7608458520861656
+      y: -0.10711940068741521
+      z: 0.011149199522281484
+    orientation:
+      x: 0.00014527230431299936
+      y: 0.00040087908630402554
+      z: -0.20801181446956687
+      w: 0.9781262205017277
+navigation_time:
+  sec: 1
+  nanosec: 200000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 467987318
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 513000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7608458520861656
+      y: -0.10711940068741521
+      z: 0.011149199522281484
+    orientation:
+      x: 0.00014527230431299936
+      y: 0.00040087908630402554
+      z: -0.20801181446956687
+      w: 0.9781262205017277
+navigation_time:
+  sec: 1
+  nanosec: 200000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 467987318
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 513000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7608458520861656
+      y: -0.10711940068741521
+      z: 0.011149199522281484
+    orientation:
+      x: 0.00014527230431299936
+      y: 0.00040087908630402554
+      z: -0.20801181446956687
+      w: 0.9781262205017277
+navigation_time:
+  sec: 1
+  nanosec: 200000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 467987318
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 547000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7543640602839996
+      y: -0.1100085091366646
+      z: 0.011169011906489192
+    orientation:
+      x: 0.0001247490302903087
+      y: 0.0005739818553996273
+      z: -0.20869087477552117
+      w: 0.9779814792560935
+navigation_time:
+  sec: 1
+  nanosec: 200000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 539745941
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 547000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7543640602839996
+      y: -0.1100085091366646
+      z: 0.011169011906489192
+    orientation:
+      x: 0.0001247490302903087
+      y: 0.0005739818553996273
+      z: -0.20869087477552117
+      w: 0.9779814792560935
+navigation_time:
+  sec: 1
+  nanosec: 200000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 539745941
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 547000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7543640602839996
+      y: -0.1100085091366646
+      z: 0.011169011906489192
+    orientation:
+      x: 0.0001247490302903087
+      y: 0.0005739818553996273
+      z: -0.20869087477552117
+      w: 0.9779814792560935
+navigation_time:
+  sec: 1
+  nanosec: 200000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 539745941
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 547000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7543640602839996
+      y: -0.1100085091366646
+      z: 0.011169011906489192
+    orientation:
+      x: 0.0001247490302903087
+      y: 0.0005739818553996273
+      z: -0.20869087477552117
+      w: 0.9779814792560935
+navigation_time:
+  sec: 1
+  nanosec: 200000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 539745941
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 581000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7478893156293824
+      y: -0.11291276025907304
+      z: 0.01119330298487023
+    orientation:
+      x: 0.00010435496348994687
+      y: 0.0006900321382433669
+      z: -0.2102892005795097
+      w: 0.9776389748190895
+navigation_time:
+  sec: 1
+  nanosec: 200000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 613387614
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 581000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7478893156293824
+      y: -0.11291276025907304
+      z: 0.01119330298487023
+    orientation:
+      x: 0.00010435496348994687
+      y: 0.0006900321382433669
+      z: -0.2102892005795097
+      w: 0.9776389748190895
+navigation_time:
+  sec: 1
+  nanosec: 200000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 613387614
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 581000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7478893156293824
+      y: -0.11291276025907304
+      z: 0.01119330298487023
+    orientation:
+      x: 0.00010435496348994687
+      y: 0.0006900321382433669
+      z: -0.2102892005795097
+      w: 0.9776389748190895
+navigation_time:
+  sec: 1
+  nanosec: 300000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 613387614
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 615000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.741071974226747
+      y: -0.11599321472533686
+      z: 0.011232288041117842
+    orientation:
+      x: 6.543392224026741e-05
+      y: 0.000732606396123661
+      z: -0.21061394262824856
+      w: 0.9775690390846342
+navigation_time:
+  sec: 1
+  nanosec: 300000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 613013312
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 615000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.741071974226747
+      y: -0.11599321472533686
+      z: 0.011232288041117842
+    orientation:
+      x: 6.543392224026741e-05
+      y: 0.000732606396123661
+      z: -0.21061394262824856
+      w: 0.9775690390846342
+navigation_time:
+  sec: 1
+  nanosec: 300000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 613013312
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 615000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.741071974226747
+      y: -0.11599321472533686
+      z: 0.011232288041117842
+    orientation:
+      x: 6.543392224026741e-05
+      y: 0.000732606396123661
+      z: -0.21061394262824856
+      w: 0.9775690390846342
+navigation_time:
+  sec: 1
+  nanosec: 300000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 613013312
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 615000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.741071974226747
+      y: -0.11599321472533686
+      z: 0.011232288041117842
+    orientation:
+      x: 6.543392224026741e-05
+      y: 0.000732606396123661
+      z: -0.21061394262824856
+      w: 0.9775690390846342
+navigation_time:
+  sec: 1
+  nanosec: 300000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 610828212
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+
+Feedback:
+    current_pose:
+  header:
+    stamp:
+      sec: 30539
+      nanosec: 649000000
+    frame_id: map
+  pose:
+    position:
+      x: -1.7342536233226324
+      y: -0.11905741921133639
+      z: 0.011271916399980677
+    orientation:
+      x: 7.514273538670822e-06
+      y: 0.0007181369334079676
+      z: -0.2088296258266588
+      w: 0.9779517736575656
+navigation_time:
+  sec: 1
+  nanosec: 300000000
+estimated_time_remaining:
+  sec: 12
+  nanosec: 610828212
+number_of_recoveries: 0
+distance_remaining: 2.7251288890838623
+

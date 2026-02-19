@@ -1,0 +1,50 @@
+[ros2run]: Process exited with failure 1
+[INFO] [1771504211.201883772] [w2_d1_topic_probe]: started: topic_odom=/odom, print_rate=1.0, min_rate_threshold=40.0, stale_timeout_sec=1.0
+[WARN] [1771504212.189245134] [w2_d1_topic_probe]: LOW_RATE: rate_hz=28.99 < 40.00 lin_x=4.038e-06 ang_z=-6.693e-08
+[WARN] [1771504213.189279290] [w2_d1_topic_probe]: LOW_RATE: rate_hz=29.00 < 40.00 lin_x=3.304e-06 ang_z=-7.238e-08
+[WARN] [1771504214.189183782] [w2_d1_topic_probe]: LOW_RATE: rate_hz=30.00 < 40.00 lin_x=3.393e-06 ang_z=-6.722e-08
+[WARN] [1771504215.189721005] [w2_d1_topic_probe]: LOW_RATE: rate_hz=29.00 < 40.00 lin_x=7.575e-07 ang_z=-8.004e-08
+[WARN] [1771504216.189503911] [w2_d1_topic_probe]: LOW_RATE: rate_hz=30.00 < 40.00 lin_x=3.598e-06 ang_z=-5.690e-08
+[WARN] [1771504217.189346419] [w2_d1_topic_probe]: LOW_RATE: rate_hz=29.01 < 40.00 lin_x=4.068e-06 ang_z=-5.624e-08
+[WARN] [1771504218.189565318] [w2_d1_topic_probe]: LOW_RATE: rate_hz=28.99 < 40.00 lin_x=3.937e-06 ang_z=-6.492e-08
+[WARN] [1771504219.189430538] [w2_d1_topic_probe]: LOW_RATE: rate_hz=30.01 < 40.00 lin_x=3.796e-06 ang_z=-7.002e-08
+[WARN] [1771504220.189010711] [w2_d1_topic_probe]: LOW_RATE: rate_hz=29.00 < 40.00 lin_x=3.959e-06 ang_z=-5.900e-08
+[WARN] [1771504221.189262062] [w2_d1_topic_probe]: LOW_RATE: rate_hz=29.00 < 40.00 lin_x=1.144e-06 ang_z=-8.467e-08
+[WARN] [1771504222.189072746] [w2_d1_topic_probe]: LOW_RATE: rate_hz=30.00 < 40.00 lin_x=2.430e-06 ang_z=-7.550e-08
+[WARN] [1771504223.189547306] [w2_d1_topic_probe]: LOW_RATE: rate_hz=28.99 < 40.00 lin_x=3.833e-06 ang_z=-5.879e-08
+[WARN] [1771504224.188942404] [w2_d1_topic_probe]: LOW_RATE: rate_hz=30.01 < 40.00 lin_x=2.989e-06 ang_z=-7.528e-08
+[INFO] [1771504997.552887911] [w2_d1_topic_probe]: started: topic_odom=/odom, print_rate=1.0, min_rate_threshold=10.0, stale_timeout_sec=0.01
+[WARN] [1771504998.541531375] [w2_d1_topic_probe]: STALE: no odom for 0.02s (timeout=0.01s) on /odom
+[INFO] [1771504999.540929670] [w2_d1_topic_probe]: OK: rate_hz=30.01 lin_x=3.332e-06 ang_z=-5.846e-08
+[WARN] [1771505000.541380080] [w2_d1_topic_probe]: STALE: no odom for 0.02s (timeout=0.01s) on /odom
+[WARN] [1771505001.541135936] [w2_d1_topic_probe]: STALE: no odom for 0.03s (timeout=0.01s) on /odom
+[INFO] [1771505002.541113075] [w2_d1_topic_probe]: OK: rate_hz=30.00 lin_x=2.245e-06 ang_z=-7.527e-08
+[WARN] [1771505003.541131345] [w2_d1_topic_probe]: STALE: no odom for 0.02s (timeout=0.01s) on /odom
+[WARN] [1771505004.541082011] [w2_d1_topic_probe]: STALE: no odom for 0.03s (timeout=0.01s) on /odom
+[WARN] [1771505005.541209469] [w2_d1_topic_probe]: STALE: no odom for 0.01s (timeout=0.01s) on /odom
+[WARN] [1771505006.541081758] [w2_d1_topic_probe]: STALE: no odom for 0.02s (timeout=0.01s) on /odom
+[INFO] [1771505007.540916959] [w2_d1_topic_probe]: OK: rate_hz=30.00 lin_x=3.749e-06 ang_z=-5.604e-08
+[WARN] [1771505008.541140070] [w2_d1_topic_probe]: STALE: no odom for 0.02s (timeout=0.01s) on /odom
+[WARN] [1771505009.541239887] [w2_d1_topic_probe]: STALE: no odom for 0.03s (timeout=0.01s) on /odom
+[INFO] [1771505060.299100644] [w2_d1_topic_probe]: started: topic_odom=/odom, print_rate=1.0, min_rate_threshold=10.0, stale_timeout_sec=1.0
+[INFO] [1771505061.286295798] [w2_d1_topic_probe]: OK: rate_hz=29.99 lin_x=1.654e-06 ang_z=-8.397e-08
+[INFO] [1771505062.286412547] [w2_d1_topic_probe]: OK: rate_hz=29.00 lin_x=3.695e-06 ang_z=-6.650e-08
+[INFO] [1771505063.286300910] [w2_d1_topic_probe]: OK: rate_hz=29.00 lin_x=2.979e-06 ang_z=-7.218e-08
+[INFO] [1771505064.286174847] [w2_d1_topic_probe]: OK: rate_hz=30.00 lin_x=2.311e-07 ang_z=-9.188e-08
+[INFO] [1771505065.286309440] [w2_d1_topic_probe]: OK: rate_hz=29.00 lin_x=9.521e-07 ang_z=-8.349e-08
+[INFO] [1771505066.286250456] [w2_d1_topic_probe]: OK: rate_hz=30.00 lin_x=4.893e-06 ang_z=-5.990e-08
+[INFO] [1771505067.286386783] [w2_d1_topic_probe]: OK: rate_hz=29.00 lin_x=2.860e-06 ang_z=-7.520e-08
+[INFO] [1771505068.286337867] [w2_d1_topic_probe]: OK: rate_hz=29.00 lin_x=3.455e-06 ang_z=-7.112e-08
+[INFO] [1771505069.286215586] [w2_d1_topic_probe]: OK: rate_hz=30.00 lin_x=3.471e-06 ang_z=-6.800e-08
+[INFO] [1771505115.485740405] [w2_d1_topic_probe]: started: topic_odom=/scan, print_rate=1.0, min_rate_threshold=10.0, stale_timeout_sec=1.0
+[WARN] [1771505116.473886811] [w2_d1_topic_probe]: NO_MSG: never received odom on /scan
+[WARN] [1771505117.473712361] [w2_d1_topic_probe]: NO_MSG: never received odom on /scan
+[WARN] [1771505118.473355717] [w2_d1_topic_probe]: NO_MSG: never received odom on /scan
+[WARN] [1771505119.473345985] [w2_d1_topic_probe]: NO_MSG: never received odom on /scan
+[WARN] [1771505120.473417337] [w2_d1_topic_probe]: NO_MSG: never received odom on /scan
+[WARN] [1771505121.473397826] [w2_d1_topic_probe]: NO_MSG: never received odom on /scan
+[WARN] [1771505122.473945008] [w2_d1_topic_probe]: NO_MSG: never received odom on /scan
+[WARN] [1771505123.473423236] [w2_d1_topic_probe]: NO_MSG: never received odom on /scan
+[WARN] [1771505124.473282310] [w2_d1_topic_probe]: NO_MSG: never received odom on /scan
+[WARN] [1771505125.473315074] [w2_d1_topic_probe]: NO_MSG: never received odom on /scan
+[WARN] [1771505126.473578001] [w2_d1_topic_probe]: NO_MSG: never received odom on /scan
