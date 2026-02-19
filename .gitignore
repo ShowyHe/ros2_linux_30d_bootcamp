@@ -27,3 +27,12 @@ results/*
 
 # --- Optional: data (often large) ---
 data/
+
+# keep logs as evidence, but avoid accidental junk
+logs/**
+!logs/.gitkeep
+!logs/w*_d*_*.log
+
+# common junk
+**/__pycache__/
+*.pyc
