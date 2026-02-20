@@ -1,0 +1,92 @@
+[INFO] [launch]: All log files can be found below /home/hexiaoyi/.ros/log/2026-02-20-17-21-02-970189-XiaoYi-95734
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [topic_probe-1]: process started with pid [95742]
+[topic_probe-1] [INFO] [1771579263.252537669] [r1.w2_d1_topic_probe]: started: topic_odom=/odom, print_rate=1.0, min_rate_threshold=10.0, stale_timeout_sec=1.0
+[topic_probe-1] [INFO] [1771579264.239483288] [r1.w2_d1_topic_probe]: OK: rate_hz=28.98 lin_x=4.064e-06 ang_z=-5.918e-08
+[topic_probe-1] [INFO] [1771579265.239948530] [r1.w2_d1_topic_probe]: OK: rate_hz=28.98 lin_x=3.952e-06 ang_z=-6.411e-08
+[topic_probe-1] [INFO] [1771579266.239501086] [r1.w2_d1_topic_probe]: OK: rate_hz=30.02 lin_x=2.090e-06 ang_z=-6.969e-08
+[topic_probe-1] [INFO] [1771579267.240257380] [r1.w2_d1_topic_probe]: OK: rate_hz=28.98 lin_x=1.806e-06 ang_z=-8.222e-08
+[topic_probe-1] [INFO] [1771579268.240085259] [r1.w2_d1_topic_probe]: OK: rate_hz=29.00 lin_x=5.636e-07 ang_z=-8.072e-08
+[topic_probe-1] [INFO] [1771579269.240132157] [r1.w2_d1_topic_probe]: OK: rate_hz=30.01 lin_x=2.447e-06 ang_z=-7.498e-08
+[topic_probe-1] [INFO] [1771579270.240332608] [r1.w2_d1_topic_probe]: OK: rate_hz=28.98 lin_x=1.690e-06 ang_z=-7.923e-08
+[topic_probe-1] [INFO] [1771579271.238795616] [r1.w2_d1_topic_probe]: OK: rate_hz=30.04 lin_x=2.986e-06 ang_z=-7.403e-08
+[topic_probe-1] [INFO] [1771579272.240364967] [r1.w2_d1_topic_probe]: OK: rate_hz=28.97 lin_x=3.280e-06 ang_z=-6.241e-08
+[topic_probe-1] [INFO] [1771579273.239349900] [r1.w2_d1_topic_probe]: OK: rate_hz=29.02 lin_x=1.586e-06 ang_z=-8.002e-08
+[topic_probe-1] [INFO] [1771579274.239097120] [r1.w2_d1_topic_probe]: OK: rate_hz=30.00 lin_x=4.320e-06 ang_z=-6.061e-08
+[topic_probe-1] [INFO] [1771579275.240252464] [r1.w2_d1_topic_probe]: OK: rate_hz=28.99 lin_x=1.769e-06 ang_z=-7.399e-08
+[topic_probe-1] [INFO] [1771579276.240552180] [r1.w2_d1_topic_probe]: OK: rate_hz=28.98 lin_x=1.494e-06 ang_z=-8.608e-08
+[topic_probe-1] [INFO] [1771579277.239921679] [r1.w2_d1_topic_probe]: OK: rate_hz=30.02 lin_x=2.440e-06 ang_z=-6.641e-08
+[INFO] [launch]: All log files can be found below /home/hexiaoyi/.ros/log/2026-02-20-17-22-36-750147-XiaoYi-96035
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [topic_probe-1]: process started with pid [96037]
+[topic_probe-1] Traceback (most recent call last):
+[topic_probe-1]   File "/home/hexiaoyi/ros2_linux_30d_bootcamp/ros2_ws/install/nav2_toolkit/lib/nav2_toolkit/topic_probe", line 33, in <module>
+[topic_probe-1]     sys.exit(load_entry_point('nav2-toolkit', 'console_scripts', 'topic_probe')())
+[topic_probe-1]   File "/home/hexiaoyi/ros2_linux_30d_bootcamp/ros2_ws/build/nav2_toolkit/nav2_toolkit/topic_probe.py", line 84, in main
+[topic_probe-1]     node = TopicProbe()
+[topic_probe-1]   File "/home/hexiaoyi/ros2_linux_30d_bootcamp/ros2_ws/build/nav2_toolkit/nav2_toolkit/topic_probe.py", line 15, in __init__
+[topic_probe-1]     self.declare_parameter("min_rate_threshold", 10.0)   # Hz
+[topic_probe-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 367, in declare_parameter
+[topic_probe-1]     return self.declare_parameters('', [args], ignore_override)[0]
+[topic_probe-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 494, in declare_parameters
+[topic_probe-1]     self._set_parameters(
+[topic_probe-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 739, in _set_parameters
+[topic_probe-1]     raise InvalidParameterTypeException(
+[topic_probe-1] rclpy.exceptions.InvalidParameterTypeException: Trying to set parameter 'min_rate_threshold' to '40' of type 'INTEGER', expecting type 'DOUBLE'
+[ERROR] [topic_probe-1]: process has died [pid 96037, exit code 1, cmd '/home/hexiaoyi/ros2_linux_30d_bootcamp/ros2_ws/install/nav2_toolkit/lib/nav2_toolkit/topic_probe --ros-args -r __node:=w2_d1_topic_probe -r __ns:=/r1 --params-file /tmp/launch_params_u22rh0t8'].
+[INFO] [launch]: All log files can be found below /home/hexiaoyi/.ros/log/2026-02-20-17-23-03-006445-XiaoYi-96126
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [topic_probe-1]: process started with pid [96128]
+[topic_probe-1] [INFO] [1771579383.279393063] [r1.w2_d1_topic_probe]: started: topic_odom=/odom, print_rate=1.0, min_rate_threshold=40.0, stale_timeout_sec=1.0
+[topic_probe-1] [WARN] [1771579384.267528528] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=28.97 < 40.00 lin_x=1.950e-06 ang_z=-6.794e-08
+[topic_probe-1] [WARN] [1771579385.267568543] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=29.00 < 40.00 lin_x=4.399e-06 ang_z=-5.970e-08
+[topic_probe-1] [WARN] [1771579386.266920423] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=30.02 < 40.00 lin_x=2.616e-06 ang_z=-6.338e-08
+[topic_probe-1] [WARN] [1771579387.267156974] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=28.98 < 40.00 lin_x=5.033e-06 ang_z=-5.578e-08
+[topic_probe-1] [WARN] [1771579388.266771650] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=29.02 < 40.00 lin_x=1.560e-06 ang_z=-8.543e-08
+[topic_probe-1] [WARN] [1771579389.267072788] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=29.98 < 40.00 lin_x=1.541e-06 ang_z=-8.509e-08
+[topic_probe-1] [WARN] [1771579390.267085490] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=29.00 < 40.00 lin_x=3.141e-06 ang_z=-6.396e-08
+[topic_probe-1] [WARN] [1771579391.266536304] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=30.02 < 40.00 lin_x=1.727e-06 ang_z=-6.908e-08
+[topic_probe-1] [WARN] [1771579392.267222160] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=28.98 < 40.00 lin_x=2.835e-06 ang_z=-7.724e-08
+[topic_probe-1] [WARN] [1771579393.267032748] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=29.01 < 40.00 lin_x=3.484e-06 ang_z=-6.793e-08
+[topic_probe-1] [WARN] [1771579394.266754723] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=30.01 < 40.00 lin_x=2.083e-06 ang_z=-7.751e-08
+[topic_probe-1] [WARN] [1771579395.267295452] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=28.98 < 40.00 lin_x=2.358e-06 ang_z=-6.408e-08
+[topic_probe-1] [WARN] [1771579396.266211597] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=30.03 < 40.00 lin_x=2.262e-06 ang_z=-6.957e-08
+[topic_probe-1] [WARN] [1771579397.266677282] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=28.99 < 40.00 lin_x=1.977e-06 ang_z=-7.978e-08
+[topic_probe-1] [WARN] [1771579398.267151675] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=28.99 < 40.00 lin_x=2.251e-06 ang_z=-6.530e-08
+[topic_probe-1] [WARN] [1771579399.266770597] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=30.01 < 40.00 lin_x=1.209e-06 ang_z=-8.687e-08
+[topic_probe-1] [WARN] [1771579400.266768244] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=29.00 < 40.00 lin_x=2.914e-06 ang_z=-6.057e-08
+[topic_probe-1] [WARN] [1771579401.267297356] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=28.98 < 40.00 lin_x=2.617e-06 ang_z=-7.359e-08
+[topic_probe-1] [WARN] [1771579402.266746148] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=30.02 < 40.00 lin_x=2.117e-06 ang_z=-6.728e-08
+[topic_probe-1] [WARN] [1771579403.267281523] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=28.99 < 40.00 lin_x=2.806e-06 ang_z=-6.199e-08
+[topic_probe-1] [WARN] [1771579404.266270803] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=30.02 < 40.00 lin_x=1.751e-06 ang_z=-8.217e-08
+[topic_probe-1] [WARN] [1771579405.267570259] [r1.w2_d1_topic_probe]: LOW_RATE: rate_hz=28.98 < 40.00 lin_x=2.007e-06 ang_z=-6.843e-08
+[INFO] [launch]: All log files can be found below /home/hexiaoyi/.ros/log/2026-02-20-18-12-07-546238-XiaoYi-105295
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [topic_probe-1]: process started with pid [105303]
+[topic_probe-1] [INFO] [1771582327.807804208] [r1.w2_d1_topic_probe]: started: topic_odom=/odom, print_rate=1.0, min_rate_threshold=10.0, stale_timeout_sec=0.03
+[topic_probe-1] [WARN] [1771582328.795488663] [r1.w2_d1_topic_probe]: NO_MSG: never received odom on /odom
+[topic_probe-1] [WARN] [1771582329.795823319] [r1.w2_d1_topic_probe]: STALE: no odom for 0.03s (timeout=0.03s) on /odom
+[topic_probe-1] [WARN] [1771582330.795617227] [r1.w2_d1_topic_probe]: STALE: no odom for 0.03s (timeout=0.03s) on /odom
+[topic_probe-1] [INFO] [1771582331.795109953] [r1.w2_d1_topic_probe]: OK: rate_hz=30.00 lin_x=2.295e-06 ang_z=-7.954e-08
+[topic_probe-1] [INFO] [1771582332.795469826] [r1.w2_d1_topic_probe]: OK: rate_hz=28.99 lin_x=1.680e-06 ang_z=-7.972e-08
+[topic_probe-1] [INFO] [1771582333.795310771] [r1.w2_d1_topic_probe]: OK: rate_hz=30.01 lin_x=1.762e-07 ang_z=-9.368e-08
+[topic_probe-1] [INFO] [1771582334.795544091] [r1.w2_d1_topic_probe]: OK: rate_hz=29.00 lin_x=2.206e-06 ang_z=-7.604e-08
+[topic_probe-1] [INFO] [1771582335.795126433] [r1.w2_d1_topic_probe]: OK: rate_hz=29.00 lin_x=2.785e-06 ang_z=-7.653e-08
+[topic_probe-1] [INFO] [1771582336.795196708] [r1.w2_d1_topic_probe]: OK: rate_hz=30.00 lin_x=1.430e-06 ang_z=-8.594e-08
+[topic_probe-1] [INFO] [1771582337.796238512] [r1.w2_d1_topic_probe]: OK: rate_hz=28.98 lin_x=2.102e-06 ang_z=-7.703e-08
+[topic_probe-1] [WARN] [1771582338.795667951] [r1.w2_d1_topic_probe]: STALE: no odom for 0.03s (timeout=0.03s) on /odom
+[topic_probe-1] [INFO] [1771582339.795796651] [r1.w2_d1_topic_probe]: OK: rate_hz=29.99 lin_x=2.701e-06 ang_z=-7.745e-08
+[topic_probe-1] [INFO] [1771582340.795350278] [r1.w2_d1_topic_probe]: OK: rate_hz=29.01 lin_x=1.962e-06 ang_z=-8.326e-08
+[topic_probe-1] [INFO] [1771582341.795687972] [r1.w2_d1_topic_probe]: OK: rate_hz=30.00 lin_x=2.952e-06 ang_z=-6.270e-08
+[topic_probe-1] [INFO] [1771582342.795327250] [r1.w2_d1_topic_probe]: OK: rate_hz=29.00 lin_x=1.224e-06 ang_z=-8.426e-08
+[topic_probe-1] [INFO] [1771582343.795404079] [r1.w2_d1_topic_probe]: OK: rate_hz=29.00 lin_x=3.190e-06 ang_z=-7.435e-08
+[topic_probe-1] [INFO] [1771582344.795868122] [r1.w2_d1_topic_probe]: OK: rate_hz=30.00 lin_x=3.209e-06 ang_z=-7.331e-08
+[topic_probe-1] [INFO] [1771582345.795610136] [r1.w2_d1_topic_probe]: OK: rate_hz=28.99 lin_x=2.566e-06 ang_z=-7.477e-08
+[topic_probe-1] [WARN] [1771582346.795881514] [r1.w2_d1_topic_probe]: STALE: no odom for 0.03s (timeout=0.03s) on /odom
+[topic_probe-1] [INFO] [1771582347.795680308] [r1.w2_d1_topic_probe]: OK: rate_hz=30.01 lin_x=4.417e-06 ang_z=-6.652e-08
+[topic_probe-1] [INFO] [1771582348.795883881] [r1.w2_d1_topic_probe]: OK: rate_hz=28.99 lin_x=3.368e-06 ang_z=-6.409e-08
+[topic_probe-1] [INFO] [1771582349.795002013] [r1.w2_d1_topic_probe]: OK: rate_hz=30.03 lin_x=3.715e-06 ang_z=-6.857e-08
+[topic_probe-1] [INFO] [1771582350.795633358] [r1.w2_d1_topic_probe]: OK: rate_hz=28.98 lin_x=3.100e-06 ang_z=-7.127e-08
+[topic_probe-1] [INFO] [1771582351.795482001] [r1.w2_d1_topic_probe]: OK: rate_hz=29.00 lin_x=5.065e-06 ang_z=-5.581e-08
+[topic_probe-1] [INFO] [1771582352.795065718] [r1.w2_d1_topic_probe]: OK: rate_hz=30.01 lin_x=3.268e-06 ang_z=-6.290e-08
+[topic_probe-1] [INFO] [1771582353.795729763] [r1.w2_d1_topic_probe]: OK: rate_hz=28.98 lin_x=1.567e-06 ang_z=-8.213e-08
