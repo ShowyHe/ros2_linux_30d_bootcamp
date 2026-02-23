@@ -1,0 +1,67 @@
+[INFO] [1771844072.358363777] [w2_d5_tf_guard]: started: timeout_sec=0.2 check1=/map->/odom
+Traceback (most recent call last):
+  File "/home/hexiaoyi/ros2_linux_30d_bootcamp/ros2_ws/install/nav2_toolkit/lib/nav2_toolkit/tf_guard", line 33, in <module>
+    sys.exit(load_entry_point('nav2-toolkit', 'console_scripts', 'tf_guard')())
+  File "/home/hexiaoyi/ros2_linux_30d_bootcamp/ros2_ws/build/nav2_toolkit/nav2_toolkit/tf_guard.py", line 69, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 751, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 748, in _spin_once_impl
+    raise handler.exception()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 254, in __call__
+    self._handler.send(None)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 447, in handler
+    await call_coroutine(entity, arg)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 361, in _execute_timer
+    await await_or_execute(tmr.callback)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 107, in await_or_execute
+    return callback(*args)
+  File "/home/hexiaoyi/ros2_linux_30d_bootcamp/ros2_ws/build/nav2_toolkit/nav2_toolkit/tf_guard.py", line 60, in _on_timer
+    parent=self.parent1, child=self.child1,
+AttributeError: 'TfGuard' object has no attribute 'parent1'
+[ros2run]: Process exited with failure 1
+[INFO] [1771844109.668830560] [w2_d5_tf_guard]: started: timeout_sec=0.2 check1=/map->/odom
+ts=2026-02-23T18:55:10+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=/map child=/odom ok=False timeout_sec=0.200
+ts=2026-02-23T18:55:11+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=/map child=/odom ok=False timeout_sec=0.200
+ts=2026-02-23T18:55:12+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=/map child=/odom ok=False timeout_sec=0.200
+ts=2026-02-23T18:55:13+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=/map child=/odom ok=False timeout_sec=0.200
+ts=2026-02-23T18:55:14+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=/map child=/odom ok=False timeout_sec=0.200
+ts=2026-02-23T18:55:15+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=/map child=/odom ok=False timeout_sec=0.200
+ts=2026-02-23T18:55:16+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=/map child=/odom ok=False timeout_sec=0.200
+ts=2026-02-23T18:55:17+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=/map child=/odom ok=False timeout_sec=0.200
+[INFO] [1771844127.785782893] [w2_d5_tf_guard]: started: timeout_sec=0.2 check1=map->odom
+ts=2026-02-23T18:55:28+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-23T18:55:29+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-23T18:55:30+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-23T18:55:31+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-23T18:55:32+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-23T18:55:33+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-23T18:55:34+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-23T18:55:35+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-23T18:55:36+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-23T18:55:37+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-23T18:55:38+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+[INFO] [1771844155.281802602] [w2_d5_tf_guard]: started: timeout_sec=0.2 check1=odom->base_link
+ts=2026-02-23T18:55:56+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=odom child=base_link timeout_sec=0.200
+ts=2026-02-23T18:55:57+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=odom child=base_link timeout_sec=0.200
+ts=2026-02-23T18:55:58+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=odom child=base_link timeout_sec=0.200
+ts=2026-02-23T18:55:59+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=odom child=base_link timeout_sec=0.200
+ts=2026-02-23T18:56:00+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=odom child=base_link timeout_sec=0.200
+ts=2026-02-23T18:56:01+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=odom child=base_link timeout_sec=0.200
+ts=2026-02-23T18:56:02+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=odom child=base_link timeout_sec=0.200
+ts=2026-02-23T18:56:03+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=odom child=base_link timeout_sec=0.200
+ts=2026-02-23T18:56:04+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=odom child=base_link timeout_sec=0.200
+ts=2026-02-23T18:56:05+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=odom child=base_link timeout_sec=0.200
+ts=2026-02-23T18:56:06+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=odom child=base_link timeout_sec=0.200
+ts=2026-02-23T18:56:07+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=odom child=base_link timeout_sec=0.200
+[INFO] [1771844261.465502513] [w2_d5_tf_guard]: started: timeout_sec=0.2 check1=base_link->no_sucn_frame
+ts=2026-02-23T18:57:42+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=base_link child=no_sucn_frame ok=False timeout_sec=0.200
+ts=2026-02-23T18:57:43+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=base_link child=no_sucn_frame ok=False timeout_sec=0.200
+ts=2026-02-23T18:57:44+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=base_link child=no_sucn_frame ok=False timeout_sec=0.200
+ts=2026-02-23T18:57:45+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=base_link child=no_sucn_frame ok=False timeout_sec=0.200
+ts=2026-02-23T18:57:46+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=base_link child=no_sucn_frame ok=False timeout_sec=0.200
+ts=2026-02-23T18:57:47+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=base_link child=no_sucn_frame ok=False timeout_sec=0.200
+ts=2026-02-23T18:57:48+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=base_link child=no_sucn_frame ok=False timeout_sec=0.200
+ts=2026-02-23T18:57:49+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=base_link child=no_sucn_frame ok=False timeout_sec=0.200
