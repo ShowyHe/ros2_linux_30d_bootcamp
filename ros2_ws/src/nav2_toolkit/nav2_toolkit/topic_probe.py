@@ -2,6 +2,9 @@ import rclpy
 from rclpy.node import Node
 from nav_msgs.msg import Odometry
 
+# NEW: status line output
+from nav2_toolkit.status_line import emit
+
 
 class TopicProbe(Node):
     def __init__(self):
@@ -11,7 +14,6 @@ class TopicProbe(Node):
         self.declare_parameter("topic_odom", "/odom")
         self.declare_parameter("print_rate", 1.0)
 
-        # w2_d2 added
         self.declare_parameter("min_rate_threshold", 10.0)   # Hz
         self.declare_parameter("stale_timeout_sec", 1.0)     # seconds
 
@@ -28,12 +30,13 @@ class TopicProbe(Node):
         self.last_lin_x = None
         self.last_ang_z = None
 
-        self.last_tick = self.get_clock().now()  # for rate estimation per timer window
-        self.last_msg_time = None                # for stale detection (None => never received)
+        self.last_tick = self.get_clock().now()
+        self.last_msg_time = None
 
         period = 1.0 / max(self.print_rate, 0.1)
         self.timer = self.create_timer(period, self._on_timer)
 
+        # 启动信息保留 logger（一次性的，不影响契约）
         self.get_logger().info(
             f"started: topic_odom={self.topic_odom}, print_rate={self.print_rate}, "
             f"min_rate_threshold={self.min_rate_threshold}, stale_timeout_sec={self.stale_timeout_sec}"
@@ -52,26 +55,57 @@ class TopicProbe(Node):
         elapsed = (now - self.last_tick).nanoseconds / 1e9
         rate_hz = (self.count / elapsed) if elapsed > 0.0 else 0.0
 
+        # 统一输出字段（建议键名稳定）
+        common = dict(
+            topic=self.topic_odom,
+            rate_hz=f"{rate_hz:.3f}",
+            threshold=f"{self.min_rate_threshold:.3f}",
+            stale_sec=f"{self.stale_timeout_sec:.3f}",
+        )
+
         # 2) stale / no-msg detection
         if self.last_msg_time is None:
-            self.get_logger().warn(f"NO_MSG: never received odom on {self.topic_odom}")
+            emit(
+                tool="topic_probe",
+                level="FAIL",
+                status="FAIL",
+                reason="stale_no_msg",
+                **common
+            )
         else:
             since_last = (now - self.last_msg_time).nanoseconds / 1e9
+
+            # STALE -> FAIL
             if since_last > self.stale_timeout_sec:
-                self.get_logger().warn(
-                    f"STALE: no odom for {since_last:.2f}s (timeout={self.stale_timeout_sec:.2f}s) "
-                    f"on {self.topic_odom}"
+                emit(
+                    tool="topic_probe",
+                    level="FAIL",
+                    status="FAIL",
+                    reason="stale_timeout",
+                    stale_age_sec=f"{since_last:.3f}",
+                    **common
                 )
             else:
-                # 3) low-rate detection (only meaningful when not stale)
+                # 3) low-rate detection -> WARN
                 if rate_hz < self.min_rate_threshold:
-                    self.get_logger().warn(
-                        f"LOW_RATE: rate_hz={rate_hz:.2f} < {self.min_rate_threshold:.2f} "
-                        f"lin_x={self.last_lin_x:.3e} ang_z={self.last_ang_z:.3e}"
+                    emit(
+                        tool="topic_probe",
+                        level="WARN",
+                        status="WARN",
+                        reason="low_rate",
+                        lin_x=f"{(self.last_lin_x if self.last_lin_x is not None else 0.0):.3e}",
+                        ang_z=f"{(self.last_ang_z if self.last_ang_z is not None else 0.0):.3e}",
+                        **common
                     )
                 else:
-                    self.get_logger().info(
-                        f"OK: rate_hz={rate_hz:.2f} lin_x={self.last_lin_x:.3e} ang_z={self.last_ang_z:.3e}"
+                    emit(
+                        tool="topic_probe",
+                        level="OK",
+                        status="OK",
+                        reason="rate_ok",
+                        lin_x=f"{(self.last_lin_x if self.last_lin_x is not None else 0.0):.3e}",
+                        ang_z=f"{(self.last_ang_z if self.last_ang_z is not None else 0.0):.3e}",
+                        **common
                     )
 
         # reset window
@@ -88,7 +122,6 @@ def main():
         pass
     finally:
         node.destroy_node()
-        # avoid "rcl_shutdown already called"
         if rclpy.ok():
             rclpy.shutdown()
 

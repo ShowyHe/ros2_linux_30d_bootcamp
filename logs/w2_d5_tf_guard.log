@@ -1,0 +1,31 @@
+[INFO] [1771841567.427703732] [w2_d5_tf_guard]: started: timeout_sec=0.2 check1=map->odom check2=odom->base_link
+ts=2026-02-23T18:12:48+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent1=map child1=odom parent2=odom child2=base_link timeout_sec=0.200
+ts=2026-02-23T18:12:49+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent1=map child1=odom parent2=odom child2=base_link timeout_sec=0.200
+ts=2026-02-23T18:12:50+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent1=map child1=odom parent2=odom child2=base_link timeout_sec=0.200
+ts=2026-02-23T18:12:51+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent1=map child1=odom parent2=odom child2=base_link timeout_sec=0.200
+ts=2026-02-23T18:12:52+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent1=map child1=odom parent2=odom child2=base_link timeout_sec=0.200
+ts=2026-02-23T18:12:53+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent1=map child1=odom parent2=odom child2=base_link timeout_sec=0.200
+ts=2026-02-23T18:12:54+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent1=map child1=odom parent2=odom child2=base_link timeout_sec=0.200
+ts=2026-02-23T18:12:55+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent1=map child1=odom parent2=odom child2=base_link timeout_sec=0.200
+ts=2026-02-23T18:12:56+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent1=map child1=odom parent2=odom child2=base_link timeout_sec=0.200
+ts=2026-02-23T18:12:57+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent1=map child1=odom parent2=odom child2=base_link timeout_sec=0.200
+ts=2026-02-23T18:12:58+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent1=map child1=odom parent2=odom child2=base_link timeout_sec=0.200
+ts=2026-02-23T18:12:59+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent1=map child1=odom parent2=odom child2=base_link timeout_sec=0.200
+ts=2026-02-23T18:13:00+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent1=map child1=odom parent2=odom child2=base_link timeout_sec=0.200
+ts=2026-02-23T18:13:01+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent1=map child1=odom parent2=odom child2=base_link timeout_sec=0.200
+ts=2026-02-23T18:13:02+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent1=map child1=odom parent2=odom child2=base_link timeout_sec=0.200
+ts=2026-02-23T18:13:03+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent1=map child1=odom parent2=odom child2=base_link timeout_sec=0.200
+ts=2026-02-23T18:13:04+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent1=map child1=odom parent2=odom child2=base_link timeout_sec=0.200
+ts=2026-02-23T18:13:05+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent1=map child1=odom parent2=odom child2=base_link timeout_sec=0.200
+[INFO] [1771842291.067764352] [w2_d5_tf_guard]: started: timeout_sec=0.2 check1=map->odom check2=odom->no_such_frame
+ts=2026-02-23T18:24:52+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent1=map child1=odom ok1=True parent2=odom child2=no_such_frame ok2=False timeout_sec=0.200
+ts=2026-02-23T18:24:53+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent1=map child1=odom ok1=True parent2=odom child2=no_such_frame ok2=False timeout_sec=0.200
+ts=2026-02-23T18:24:54+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent1=map child1=odom ok1=True parent2=odom child2=no_such_frame ok2=False timeout_sec=0.200
+ts=2026-02-23T18:24:55+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent1=map child1=odom ok1=True parent2=odom child2=no_such_frame ok2=False timeout_sec=0.200
+ts=2026-02-23T18:24:56+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent1=map child1=odom ok1=True parent2=odom child2=no_such_frame ok2=False timeout_sec=0.200
+ts=2026-02-23T18:24:57+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent1=map child1=odom ok1=True parent2=odom child2=no_such_frame ok2=False timeout_sec=0.200
+ts=2026-02-23T18:24:58+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent1=map child1=odom ok1=True parent2=odom child2=no_such_frame ok2=False timeout_sec=0.200
+ts=2026-02-23T18:24:59+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent1=map child1=odom ok1=True parent2=odom child2=no_such_frame ok2=False timeout_sec=0.200
+ts=2026-02-23T18:25:00+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent1=map child1=odom ok1=True parent2=odom child2=no_such_frame ok2=False timeout_sec=0.200
+ts=2026-02-23T18:25:01+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent1=map child1=odom ok1=True parent2=odom child2=no_such_frame ok2=False timeout_sec=0.200
+ts=2026-02-23T18:25:02+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent1=map child1=odom ok1=True parent2=odom child2=no_such_frame ok2=False timeout_sec=0.200

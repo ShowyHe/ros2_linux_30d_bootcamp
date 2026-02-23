@@ -27,7 +27,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'topic_probe=nav2_toolkit.topic_probe:main'
+            'topic_probe = nav2_toolkit.topic_probe:main',
+            'tf_guard = nav2_toolkit.tf_guard:main',
         ],
     },
 )

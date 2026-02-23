@@ -1,0 +1,46 @@
+Package 'nav2_toolkit' not found
+Package 'nav2_toolkit' not found
+[INFO] [1771728870.781177982] [w2_d1_topic_probe]: started: topic_odom=/odom, print_rate=1.0, min_rate_threshold=10.0, stale_timeout_sec=1.0
+ts=2026-02-22T10:54:31+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=3.018e-06 ang_z=-6.014e-08 topic=/odom rate_hz=28.993 threshold=10.000 stale_sec=1.000
+ts=2026-02-22T10:54:32+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=1.959e-06 ang_z=-7.983e-08 topic=/odom rate_hz=30.002 threshold=10.000 stale_sec=1.000
+ts=2026-02-22T10:54:33+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=3.608e-06 ang_z=-6.073e-08 topic=/odom rate_hz=28.997 threshold=10.000 stale_sec=1.000
+ts=2026-02-22T10:54:34+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=3.330e-06 ang_z=-6.760e-08 topic=/odom rate_hz=28.998 threshold=10.000 stale_sec=1.000
+ts=2026-02-22T10:54:35+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.897e-06 ang_z=-6.115e-08 topic=/odom rate_hz=30.002 threshold=10.000 stale_sec=1.000
+ts=2026-02-22T10:54:36+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.505e-06 ang_z=-7.754e-08 topic=/odom rate_hz=29.001 threshold=10.000 stale_sec=1.000
+ts=2026-02-22T10:54:37+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.111e-06 ang_z=-6.622e-08 topic=/odom rate_hz=29.999 threshold=10.000 stale_sec=1.000
+ts=2026-02-22T10:54:38+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.789e-06 ang_z=-6.184e-08 topic=/odom rate_hz=29.003 threshold=10.000 stale_sec=1.000
+ts=2026-02-22T10:54:40+08:00 tool=topic_probe level=FAIL status=FAIL reason=stale_timeout stale_age_sec=1.396 topic=/odom rate_hz=8.312 threshold=10.000 stale_sec=1.000
+ts=2026-02-22T10:54:40+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=3.913e-06 ang_z=-5.915e-08 topic=/odom rate_hz=133.207 threshold=10.000 stale_sec=1.000
+ts=2026-02-22T10:54:41+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.435e-06 ang_z=-7.706e-08 topic=/odom rate_hz=31.001 threshold=10.000 stale_sec=1.000
+ts=2026-02-22T10:54:42+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=1.231e-06 ang_z=-7.305e-08 topic=/odom rate_hz=29.001 threshold=10.000 stale_sec=1.000
+ts=2026-02-22T10:54:43+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=4.074e-06 ang_z=-5.297e-08 topic=/odom rate_hz=29.999 threshold=10.000 stale_sec=1.000
+ts=2026-02-22T10:54:44+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=3.668e-06 ang_z=-6.866e-08 topic=/odom rate_hz=28.997 threshold=10.000 stale_sec=1.000
+Traceback (most recent call last):
+  File "/home/hexiaoyi/ros2_linux_30d_bootcamp/ros2_ws/install/nav2_toolkit/lib/nav2_toolkit/topic_probe", line 33, in <module>
+    sys.exit(load_entry_point('nav2-toolkit', 'console_scripts', 'topic_probe')())
+  File "/home/hexiaoyi/ros2_linux_30d_bootcamp/ros2_ws/build/nav2_toolkit/nav2_toolkit/topic_probe.py", line 118, in main
+    node = TopicProbe()
+  File "/home/hexiaoyi/ros2_linux_30d_bootcamp/ros2_ws/build/nav2_toolkit/nav2_toolkit/topic_probe.py", line 17, in __init__
+    self.declare_parameter("min_rate_threshold", 10.0)   # Hz
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 367, in declare_parameter
+    return self.declare_parameters('', [args], ignore_override)[0]
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 494, in declare_parameters
+    self._set_parameters(
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 739, in _set_parameters
+    raise InvalidParameterTypeException(
+rclpy.exceptions.InvalidParameterTypeException: Trying to set parameter 'min_rate_threshold' to '40' of type 'INTEGER', expecting type 'DOUBLE'
+[ros2run]: Process exited with failure 1
+[INFO] [1771729191.807717666] [w2_d1_topic_probe]: started: topic_odom=/odom, print_rate=1.0, min_rate_threshold=40.0, stale_timeout_sec=1.0
+ts=2026-02-22T10:59:52+08:00 tool=topic_probe level=WARN status=WARN reason=low_rate lin_x=3.467e-06 ang_z=-6.085e-08 topic=/odom rate_hz=28.992 threshold=40.000 stale_sec=1.000
+ts=2026-02-22T10:59:53+08:00 tool=topic_probe level=WARN status=WARN reason=low_rate lin_x=3.207e-06 ang_z=-6.983e-08 topic=/odom rate_hz=29.001 threshold=40.000 stale_sec=1.000
+ts=2026-02-22T10:59:54+08:00 tool=topic_probe level=WARN status=WARN reason=low_rate lin_x=2.727e-06 ang_z=-6.613e-08 topic=/odom rate_hz=30.001 threshold=40.000 stale_sec=1.000
+ts=2026-02-22T10:59:55+08:00 tool=topic_probe level=WARN status=WARN reason=low_rate lin_x=3.818e-06 ang_z=-6.517e-08 topic=/odom rate_hz=28.993 threshold=40.000 stale_sec=1.000
+ts=2026-02-22T10:59:56+08:00 tool=topic_probe level=WARN status=WARN reason=low_rate lin_x=3.363e-06 ang_z=-5.997e-08 topic=/odom rate_hz=30.007 threshold=40.000 stale_sec=1.000
+ts=2026-02-22T10:59:57+08:00 tool=topic_probe level=WARN status=WARN reason=low_rate lin_x=4.430e-06 ang_z=-6.093e-08 topic=/odom rate_hz=28.997 threshold=40.000 stale_sec=1.000
+ts=2026-02-22T10:59:58+08:00 tool=topic_probe level=WARN status=WARN reason=low_rate lin_x=1.025e-06 ang_z=-8.587e-08 topic=/odom rate_hz=28.999 threshold=40.000 stale_sec=1.000
+ts=2026-02-22T10:59:59+08:00 tool=topic_probe level=WARN status=WARN reason=low_rate lin_x=3.256e-06 ang_z=-6.230e-08 topic=/odom rate_hz=30.001 threshold=40.000 stale_sec=1.000
+ts=2026-02-22T11:00:00+08:00 tool=topic_probe level=WARN status=WARN reason=low_rate lin_x=4.324e-06 ang_z=-6.154e-08 topic=/odom rate_hz=29.002 threshold=40.000 stale_sec=1.000
+ts=2026-02-22T11:00:01+08:00 tool=topic_probe level=WARN status=WARN reason=low_rate lin_x=1.047e-06 ang_z=-7.829e-08 topic=/odom rate_hz=30.003 threshold=40.000 stale_sec=1.000
+ts=2026-02-22T11:00:02+08:00 tool=topic_probe level=WARN status=WARN reason=low_rate lin_x=2.229e-06 ang_z=-7.995e-08 topic=/odom rate_hz=29.000 threshold=40.000 stale_sec=1.000
+ts=2026-02-22T11:00:03+08:00 tool=topic_probe level=WARN status=WARN reason=low_rate lin_x=4.217e-06 ang_z=-6.240e-08 topic=/odom rate_hz=28.997 threshold=40.000 stale_sec=1.000
+ts=2026-02-22T11:00:04+08:00 tool=topic_probe level=WARN status=WARN reason=low_rate lin_x=5.088e-06 ang_z=-4.603e-08 topic=/odom rate_hz=29.999 threshold=40.000 stale_sec=1.000
