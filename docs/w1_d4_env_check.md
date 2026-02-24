@@ -1,3 +1,5 @@
+# w1_d6_env_check.md（Week1 Day4 / Global Day4）
+
 ## 今日目标（Day4）
 - 搞懂“环境变量属于谁”：属于当前 shell 进程；新开终端=新进程=环境从零开始
 - 搞懂 `source` vs `bash`：为什么 ROS2 的 setup 必须用 `source`

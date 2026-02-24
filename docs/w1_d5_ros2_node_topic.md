@@ -1,3 +1,5 @@
+# w1_d5_ros2_node_topic.md（Week1 Day5 / Global Day5）
+
 ## 今日目标
 - 建立 ROS2 通信“概念闭环”：node、DDS、topic/service/action 的关系
 - 掌握 node/topic 的证据链方法：能判断“节点活没活、topic 有没有发布、有没有数据、频率是否正常”

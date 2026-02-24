@@ -1,3 +1,5 @@
+# w1_d1_linux_cmds.md（Week1 Day1 / Global Day1）
+
 ## 今日目标
 - 掌握文件/路径相关基础命令（pwd/ls/cd/mkdir/cp/mv/rm）
 - 能用 find + grep + 管道 | 在真实目录中定位“文件”和“关键词”

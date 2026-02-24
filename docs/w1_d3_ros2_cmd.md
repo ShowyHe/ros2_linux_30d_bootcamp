@@ -1,3 +1,5 @@
+# w1_d3_ros2_cmd.md（Week1 Day3 / Global Day3）
+
 ## 今日目标
 - 掌握进程查看与清场的核心命令（ps/grep、top/htop、kill/pkill）
 - 能定位“残留进程导致现象诡异”的根因：进程仍在运行、资源占用异常、信号未生效/匹配漏掉

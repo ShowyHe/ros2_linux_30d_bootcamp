@@ -1,3 +1,5 @@
+# w2_d3p5_output_contract.md（Week2 Day3p5 / Global Day10）
+
 ## 今天干了什么
 我把 `topic_probe` 的输出从“人能看懂的散装日志”，改成“脚本也能稳定解析的一行状态（key=value）”。  
 目的：后面 Week3 一键出报告、Week4 CI 才有稳定输入。

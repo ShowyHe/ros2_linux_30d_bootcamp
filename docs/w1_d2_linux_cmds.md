@@ -1,3 +1,5 @@
+# w1_d2_linux_cmd.md（Week1 Day2 / Global Day2）
+
 ## 今日目标
 - 掌握日志查看与重定向：cat / less / tail -f + > / >> / 2> / 2>&1 / | tee
 - 能把任意命令的 stdout+stderr 可靠落盘到 logs/，并能边看边写（tee）

@@ -1,0 +1,49 @@
+/amcl
+/behavior_server
+/bt_navigator
+/controller_server
+/global_costmap/global_costmap
+/local_costmap/local_costmap
+/map_server
+/planner_server
+/smoother_server
+/velocity_smoother
+/waypoint_follower
+active [3]
+active [3]
+active [3]
+active [3]
+active [3]
+active [3]
+active [3]
+active [3]
+active [3]
+active [3]
+active [3]
+active [3]
+Unknown transition requested, available ones are:
+- deactivate [4]
+- shutdown [7]
+active [3]
+Transitioning successful
+active [3]
+/lifecycle_manager_localization
+/lifecycle_manager_navigation
+/lifecycle_manager_localization/manage_nodes
+/lifecycle_manager_navigation/manage_nodes
+Transitioning successful
+inactive [2]
+inactive [2]
+active [3]
+active [3]
+active [3]
+/lifecycle_manager_localization
+/lifecycle_manager_navigation
+/lifecycle_manager_localization/manage_nodes
+/lifecycle_manager_navigation/manage_nodes
+Transitioning successful
+inactive [2]
+unconfigured [1]
+inactive [2]
+inactive [2]
+active [3]
