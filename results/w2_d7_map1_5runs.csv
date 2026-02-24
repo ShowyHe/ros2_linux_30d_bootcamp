@@ -1,0 +1,6 @@
+schema_version,run_id,goal_id,result,time_sec,notes,recovery,recovery_types,recovery_hits,log_path
+1,run1,goal_x1p8_y0p0_yaw0,S,34.746,"w2_d7 map1 goal_sender",,,0,logs/w2_d7_goal_sender.log
+1,run2,goal_xm2p0_y0p0_yaw0,S,30.663,"w2_d7 map1 goal_sender",,,0,logs/w2_d7_goal_sender.log
+1,run3,goal_x1p8_y0p0_yaw0,S,29.507,"w2_d7 map1 goal_sender",,,0,logs/w2_d7_goal_sender.log
+1,run4,goal_xm2p0_y0p0_yaw0,S,31.839,"w2_d7 map1 goal_sender",,,0,logs/w2_d7_goal_sender.log
+1,run5,goal_x1p8_y0p0_yaw0,S,25.563,"w2_d7 map1 goal_sender",,,0,logs/w2_d7_goal_sender.log
