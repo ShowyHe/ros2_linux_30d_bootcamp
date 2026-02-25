@@ -1,0 +1,22 @@
+ts=2026-02-25T17:05:12+0800 tool=healthcheck level=OK status=OK reason=start script=w3_d2_nav2_healthcheck
+ts=2026-02-25T17:05:12+0800 tool=healthcheck level=OK status=OK reason=cmd_found cmd=ros2
+ts=2026-02-25T17:05:12+0800 tool=healthcheck level=OK status=OK reason=node_exists node=/bt_navigator
+ts=2026-02-25T17:05:12+0800 tool=healthcheck level=OK status=OK reason=node_exists node=/planner_server
+ts=2026-02-25T17:05:12+0800 tool=healthcheck level=OK status=OK reason=node_exists node=/controller_server
+ts=2026-02-25T17:05:13+0800 tool=healthcheck level=OK status=OK reason=node_exists node=/map_server
+ts=2026-02-25T17:05:13+0800 tool=healthcheck level=OK status=OK reason=topic_publishers_ok topic=/tf publisher_count=3 min_pub=1
+ts=2026-02-25T17:05:13+0800 tool=healthcheck level=OK status=OK reason=topic_publishers_ok topic=/tf_static publisher_count=1 min_pub=1
+ts=2026-02-25T17:05:13+0800 tool=healthcheck level=OK status=OK reason=topic_publishers_ok topic=/map publisher_count=1 min_pub=1
+ts=2026-02-25T17:05:14+0800 tool=healthcheck level=OK status=OK reason=lifecycle_active node=/map_server state=active
+ts=2026-02-25T17:05:14+0800 tool=healthcheck level=OK status=OK reason=summary result=PASS fail_count=0
+ts=2026-02-25T17:14:47+0800 tool=healthcheck level=OK status=OK reason=start script=w3_d2_nav2_healthcheck
+ts=2026-02-25T17:14:47+0800 tool=healthcheck level=OK status=OK reason=cmd_found cmd=ros2
+ts=2026-02-25T17:14:47+0800 tool=healthcheck level=FAIL status=FAIL reason=node_missing node=/bt_navigator
+ts=2026-02-25T17:14:48+0800 tool=healthcheck level=FAIL status=FAIL reason=node_missing node=/planner_server
+ts=2026-02-25T17:14:48+0800 tool=healthcheck level=FAIL status=FAIL reason=node_missing node=/controller_server
+ts=2026-02-25T17:14:48+0800 tool=healthcheck level=FAIL status=FAIL reason=node_missing node=/map_server
+ts=2026-02-25T17:14:48+0800 tool=healthcheck level=FAIL status=FAIL reason=topic_info_error topic=/tf rc=1
+ts=2026-02-25T17:14:48+0800 tool=healthcheck level=FAIL status=FAIL reason=topic_info_error topic=/tf_static rc=1
+ts=2026-02-25T17:14:49+0800 tool=healthcheck level=FAIL status=FAIL reason=topic_info_error topic=/map rc=1
+ts=2026-02-25T17:14:49+0800 tool=healthcheck level=FAIL status=FAIL reason=lifecycle_get_error node=/map_server rc=1
+ts=2026-02-25T17:14:49+0800 tool=healthcheck level=FAIL status=FAIL reason=summary result=FAIL fail_count=8
