@@ -1,0 +1,22 @@
+ts=2026-02-26T15:42:03+0800 tool=healthcheck level=OK status=OK reason=start script=w3_d2_nav2_healthcheck
+ts=2026-02-26T15:42:03+0800 tool=healthcheck level=OK status=OK reason=cmd_found cmd=ros2
+ts=2026-02-26T15:42:03+0800 tool=healthcheck level=OK status=OK reason=node_exists node=/bt_navigator
+ts=2026-02-26T15:42:03+0800 tool=healthcheck level=OK status=OK reason=node_exists node=/planner_server
+ts=2026-02-26T15:42:04+0800 tool=healthcheck level=OK status=OK reason=node_exists node=/controller_server
+ts=2026-02-26T15:42:04+0800 tool=healthcheck level=OK status=OK reason=node_exists node=/map_server
+ts=2026-02-26T15:42:04+0800 tool=healthcheck level=OK status=OK reason=topic_publishers_ok topic=/tf publisher_count=3 min_pub=1
+ts=2026-02-26T15:42:04+0800 tool=healthcheck level=OK status=OK reason=topic_publishers_ok topic=/tf_static publisher_count=1 min_pub=1
+ts=2026-02-26T15:42:05+0800 tool=healthcheck level=OK status=OK reason=topic_publishers_ok topic=/map publisher_count=1 min_pub=1
+ts=2026-02-26T15:42:06+0800 tool=healthcheck level=OK status=OK reason=lifecycle_active node=/map_server state=active
+ts=2026-02-26T15:42:06+0800 tool=healthcheck level=OK status=OK reason=summary result=PASS fail_count=0
+ts=2026-02-26T16:06:08+0800 tool=healthcheck level=OK status=OK reason=start script=w3_d2_nav2_healthcheck
+ts=2026-02-26T16:06:08+0800 tool=healthcheck level=OK status=OK reason=cmd_found cmd=ros2
+ts=2026-02-26T16:06:08+0800 tool=healthcheck level=OK status=OK reason=node_exists node=/bt_navigator
+ts=2026-02-26T16:06:08+0800 tool=healthcheck level=OK status=OK reason=node_exists node=/planner_server
+ts=2026-02-26T16:06:08+0800 tool=healthcheck level=OK status=OK reason=node_exists node=/controller_server
+ts=2026-02-26T16:06:08+0800 tool=healthcheck level=OK status=OK reason=node_exists node=/map_server
+ts=2026-02-26T16:06:09+0800 tool=healthcheck level=OK status=OK reason=topic_publishers_ok topic=/tf publisher_count=3 min_pub=1
+ts=2026-02-26T16:06:09+0800 tool=healthcheck level=OK status=OK reason=topic_publishers_ok topic=/tf_static publisher_count=1 min_pub=1
+ts=2026-02-26T16:06:09+0800 tool=healthcheck level=OK status=OK reason=topic_publishers_ok topic=/map publisher_count=1 min_pub=1
+ts=2026-02-26T16:06:10+0800 tool=healthcheck level=OK status=OK reason=lifecycle_active node=/map_server state=active
+ts=2026-02-26T16:06:10+0800 tool=healthcheck level=OK status=OK reason=summary result=PASS fail_count=0

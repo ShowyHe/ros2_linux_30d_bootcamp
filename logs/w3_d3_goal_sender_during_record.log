@@ -1,0 +1,17 @@
+[INFO] [1772091917.077908696] [w2_d7_goal_sender]: started: frame_id=map x=1.8 y=0.0 yaw=0.0 timeout_sec=120.0 server_timeout_sec=3.0 action_name=/navigate_to_pose
+ts=2026-02-26T15:45:17+08:00 tool=goal_sender level=OK status=OK reason=goal_sent action=/navigate_to_pose frame=map x=1.800 y=0.000 yaw=0.000
+ts=2026-02-26T15:45:17+08:00 tool=goal_sender level=OK status=OK reason=goal_accepted action=/navigate_to_pose
+ts=2026-02-26T15:45:44+08:00 tool=goal_sender level=OK status=OK reason=result_received action=/navigate_to_pose result_status=4 result_status_name=SUCCEEDED time_sec=27.332
+[INFO] [1772092443.838794714] [w2_d7_goal_sender]: started: frame_id=map x=-2.0 y=0.0 yaw=0.0 timeout_sec=120.0 server_timeout_sec=3.0 action_name=/navigate_to_pose
+ts=2026-02-26T15:54:03+08:00 tool=goal_sender level=OK status=OK reason=goal_sent action=/navigate_to_pose frame=map x=-2.000 y=0.000 yaw=0.000
+ts=2026-02-26T15:54:03+08:00 tool=goal_sender level=OK status=OK reason=goal_accepted action=/navigate_to_pose
+ts=2026-02-26T15:54:18+08:00 tool=goal_sender level=FAIL status=FAIL reason=result_received action=/navigate_to_pose result_status=6 result_status_name=ABORTED time_sec=14.953
+[ros2run]: Process exited with failure 8
+[INFO] [1772093146.824289958] [w2_d7_goal_sender]: started: frame_id=map x=-2.0 y=0.0 yaw=0.0 timeout_sec=120.0 server_timeout_sec=3.0 action_name=/navigate_to_pose
+ts=2026-02-26T16:05:46+08:00 tool=goal_sender level=OK status=OK reason=goal_sent action=/navigate_to_pose frame=map x=-2.000 y=0.000 yaw=0.000
+ts=2026-02-26T16:05:46+08:00 tool=goal_sender level=OK status=OK reason=goal_accepted action=/navigate_to_pose
+ts=2026-02-26T16:06:01+08:00 tool=goal_sender level=OK status=OK reason=result_received action=/navigate_to_pose result_status=4 result_status_name=SUCCEEDED time_sec=14.263
+[INFO] [1772093176.865839953] [w2_d7_goal_sender]: started: frame_id=map x=1.8 y=0.0 yaw=0.0 timeout_sec=120.0 server_timeout_sec=3.0 action_name=/navigate_to_pose
+ts=2026-02-26T16:06:16+08:00 tool=goal_sender level=OK status=OK reason=goal_sent action=/navigate_to_pose frame=map x=1.800 y=0.000 yaw=0.000
+ts=2026-02-26T16:06:16+08:00 tool=goal_sender level=OK status=OK reason=goal_accepted action=/navigate_to_pose
+ts=2026-02-26T16:06:53+08:00 tool=goal_sender level=OK status=OK reason=result_received action=/navigate_to_pose result_status=4 result_status_name=SUCCEEDED time_sec=36.372
