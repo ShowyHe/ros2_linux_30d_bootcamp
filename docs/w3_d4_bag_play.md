@@ -61,6 +61,7 @@
 ## 3.2 `--clock` 是 ros2 bag play 的选项
 
 `--clock` 不是 topic，而是 `ros2 bag play` 的命令行选项。其作用是由 player 额外生成并发布 `/clock`。
+之前在ros2_nav2_protfolio里面，加了--clock，导致出现了两个时间，时间出现问题
 
 ## 3.3 本次 replay 的使用原则
 

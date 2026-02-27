@@ -106,3 +106,54 @@ ts=2026-02-26T17:55:37+08:00 tool=topic_probe level=OK status=OK reason=rate_ok 
 [INFO] [1772101258.930714002] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
 [INFO] [1772101309.465082261] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
 [INFO] [1772101361.075787894] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772101412.665490121] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772101463.182735376] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772101514.721463810] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772101565.238309352] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772101616.794670991] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772101666.251418846] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772101716.719720379] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772101767.287375884] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772101818.856825344] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772101869.395255330] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772101921.258677987] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772101971.928064246] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772102023.991084235] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772102074.673888079] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772102126.685007772] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772102177.459992436] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772102229.595405438] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772102279.052760796] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772102328.509582728] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772102380.188505372] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772102430.904067269] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772102483.002501153] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772102533.742180018] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772102584.219977384] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772102636.045714653] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772102686.749922421] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772102738.667499150] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772102789.131450089] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772102840.801621502] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772102891.339036974] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772102943.097428839] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772102993.707907064] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772103044.834046240] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772103096.568176492] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772103147.146986990] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772103198.666653336] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772103249.787728904] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772103300.450400204] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772103352.793930257] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] bag_dir=bags/w3_d3_map1_run02
+[INFO] loop_flag=--loop
+[INFO] replay_topics=/clock /tf /tf_static /scan /map /odom /amcl_pose /cmd_vel /navigate_to_pose/_action/status
+[INFO] policy=bag_contains_/clock_so_do_not_use_--clock
+[INFO] [1772103451.030167171] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.
+[INFO] [1772103451.030236071] [rosbag2_player]: Set rate to 1
+[INFO] [1772103451.035070021] [rosbag2_player]: Adding keyboard callbacks.
+[INFO] [1772103451.035102312] [rosbag2_player]: Press SPACE for Pause/Resume
+[INFO] [1772103451.035108696] [rosbag2_player]: Press CURSOR_RIGHT for Play Next Message
+[INFO] [1772103451.035112853] [rosbag2_player]: Press CURSOR_UP for Increase Rate 10%
+[INFO] [1772103451.035116478] [rosbag2_player]: Press CURSOR_DOWN for Decrease Rate 10%
+[INFO] [1772103451.035370338] [rosbag2_storage]: Opened database 'bags/w3_d3_map1_run02/w3_d3_map1_run02_0.db3' for READ_ONLY.

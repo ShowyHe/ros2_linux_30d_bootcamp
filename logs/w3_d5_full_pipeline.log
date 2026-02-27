@@ -1,0 +1,138 @@
+ts=2026-02-27T10:15:37+0800 tool=healthcheck level=OK status=OK reason=start script=w3_d2_nav2_healthcheck
+ts=2026-02-27T10:15:37+0800 tool=healthcheck level=OK status=OK reason=cmd_found cmd=ros2
+ts=2026-02-27T10:15:37+0800 tool=healthcheck level=OK status=OK reason=node_exists node=/bt_navigator
+ts=2026-02-27T10:15:37+0800 tool=healthcheck level=OK status=OK reason=node_exists node=/planner_server
+ts=2026-02-27T10:15:38+0800 tool=healthcheck level=OK status=OK reason=node_exists node=/controller_server
+ts=2026-02-27T10:15:38+0800 tool=healthcheck level=OK status=OK reason=node_exists node=/map_server
+ts=2026-02-27T10:15:38+0800 tool=healthcheck level=OK status=OK reason=topic_publishers_ok topic=/tf publisher_count=3 min_pub=1
+ts=2026-02-27T10:15:38+0800 tool=healthcheck level=OK status=OK reason=topic_publishers_ok topic=/tf_static publisher_count=1 min_pub=1
+ts=2026-02-27T10:15:39+0800 tool=healthcheck level=OK status=OK reason=topic_publishers_ok topic=/map publisher_count=1 min_pub=1
+ts=2026-02-27T10:15:40+0800 tool=healthcheck level=OK status=OK reason=lifecycle_active node=/map_server state=active
+ts=2026-02-27T10:15:40+0800 tool=healthcheck level=OK status=OK reason=summary result=PASS fail_count=0
+hc_script_exit_code=0 tee_exit_code=0
+[INFO] [1772158546.722556355] [w2_d1_topic_probe]: started: topic_odom=/odom, print_rate=1.0, min_rate_threshold=10.0, stale_timeout_sec=1.0
+ts=2026-02-27T10:15:47+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=1.261e-06 ang_z=-6.456e-07 topic=/odom rate_hz=29.975 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:15:48+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.967e-06 ang_z=-6.715e-07 topic=/odom rate_hz=29.011 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:15:49+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.187e-06 ang_z=-7.890e-07 topic=/odom rate_hz=29.002 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:15:50+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=1.153e-06 ang_z=-8.629e-07 topic=/odom rate_hz=30.000 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:15:51+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=3.209e-06 ang_z=-4.007e-07 topic=/odom rate_hz=28.994 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:15:52+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.567e-06 ang_z=-7.788e-07 topic=/odom rate_hz=28.999 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:15:53+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=1.194e-06 ang_z=-8.468e-07 topic=/odom rate_hz=30.008 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:15:54+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=3.083e-06 ang_z=-4.414e-07 topic=/odom rate_hz=28.991 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:15:55+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=3.386e-06 ang_z=-4.273e-07 topic=/odom rate_hz=29.008 threshold=10.000 stale_sec=1.000
+[INFO] [1772158555.848839740] [w2_d5_tf_guard]: started: timeout_sec=0.2 check1=map->odom
+ts=2026-02-27T10:15:56+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=3.694e-06 ang_z=-5.199e-07 topic=/odom rate_hz=30.001 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:15:56+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:15:57+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=3.096e-06 ang_z=-5.763e-07 topic=/odom rate_hz=29.002 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:15:57+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:15:58+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=3.272e-06 ang_z=-4.884e-07 topic=/odom rate_hz=28.996 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:15:58+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:15:59+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=3.604e-06 ang_z=-3.780e-07 topic=/odom rate_hz=29.998 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:15:59+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:00+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.988e-06 ang_z=-5.843e-07 topic=/odom rate_hz=29.004 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:00+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:01+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=3.588e-06 ang_z=-6.212e-07 topic=/odom rate_hz=29.001 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:01+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:02+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=8.718e-07 ang_z=-7.537e-07 topic=/odom rate_hz=29.994 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:02+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:03+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.882e-06 ang_z=-5.483e-07 topic=/odom rate_hz=28.977 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:03+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:04+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.118e-06 ang_z=-5.842e-07 topic=/odom rate_hz=29.021 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:04+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+[INFO] [1772158565.218317315] [w2_d7_goal_sender]: started: frame_id=map x=1.8 y=0.0 yaw=0.0 timeout_sec=120.0 server_timeout_sec=3.0 action_name=/navigate_to_pose
+ts=2026-02-27T10:16:05+08:00 tool=goal_sender level=OK status=OK reason=goal_sent action=/navigate_to_pose frame=map x=1.800 y=0.000 yaw=0.000
+ts=2026-02-27T10:16:05+08:00 tool=goal_sender level=OK status=OK reason=goal_accepted action=/navigate_to_pose
+ts=2026-02-27T10:16:05+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.063e-01 ang_z=8.713e-01 topic=/odom rate_hz=30.004 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:05+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:06+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.197e-01 ang_z=4.525e-02 topic=/odom rate_hz=29.003 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:06+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:07+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.205e-01 ang_z=-3.094e-01 topic=/odom rate_hz=28.998 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:07+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:08+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.194e-01 ang_z=-3.304e-01 topic=/odom rate_hz=30.006 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:08+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:09+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.086e-01 ang_z=-2.691e-01 topic=/odom rate_hz=28.992 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:09+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:10+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.087e-01 ang_z=-1.225e-01 topic=/odom rate_hz=28.997 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:10+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:11+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.085e-01 ang_z=1.401e-02 topic=/odom rate_hz=30.009 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:11+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:12+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.084e-01 ang_z=3.276e-02 topic=/odom rate_hz=28.997 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:12+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:13+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=1.974e-01 ang_z=-2.938e-03 topic=/odom rate_hz=28.996 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:13+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:14+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.084e-01 ang_z=-2.959e-02 topic=/odom rate_hz=30.007 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:14+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:15+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.084e-01 ang_z=-1.947e-02 topic=/odom rate_hz=28.999 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:15+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:16+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.084e-01 ang_z=1.520e-02 topic=/odom rate_hz=28.989 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:16+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:17+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.196e-01 ang_z=1.937e-01 topic=/odom rate_hz=30.006 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:17+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:18+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.080e-01 ang_z=3.118e-01 topic=/odom rate_hz=28.992 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:18+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:19+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=1.974e-01 ang_z=-2.809e-02 topic=/odom rate_hz=29.014 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:19+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:20+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.200e-01 ang_z=4.329e-02 topic=/odom rate_hz=29.994 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:20+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:21+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.086e-01 ang_z=-3.442e-02 topic=/odom rate_hz=28.984 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:21+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:22+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.090e-01 ang_z=-2.866e-01 topic=/odom rate_hz=30.027 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:22+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:23+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.204e-01 ang_z=-3.940e-01 topic=/odom rate_hz=28.997 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:23+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:24+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.204e-01 ang_z=-4.916e-01 topic=/odom rate_hz=29.000 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:24+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:25+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=1.279e-01 ang_z=-2.499e-01 topic=/odom rate_hz=30.003 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:25+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:26+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=4.691e-02 ang_z=-2.948e-01 topic=/odom rate_hz=28.999 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:26+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:27+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=5.779e-02 ang_z=-1.516e-01 topic=/odom rate_hz=28.997 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:27+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:28+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=-7.731e-04 ang_z=7.484e-01 topic=/odom rate_hz=30.002 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:28+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:29+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=-1.225e-03 ang_z=6.355e-01 topic=/odom rate_hz=29.000 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:29+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:30+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=-6.050e-04 ang_z=3.263e-01 topic=/odom rate_hz=28.998 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:30+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:31+08:00 tool=goal_sender level=OK status=OK reason=result_received action=/navigate_to_pose result_status=4 result_status_name=SUCCEEDED time_sec=26.363
+ts=2026-02-27T10:16:31+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=-6.933e-04 ang_z=-2.287e-01 topic=/odom rate_hz=30.006 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:31+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:32+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=3.260e-06 ang_z=-1.989e-05 topic=/odom rate_hz=28.994 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:32+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:33+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=4.317e-06 ang_z=1.717e-06 topic=/odom rate_hz=28.994 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:33+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:34+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.988e-06 ang_z=1.426e-06 topic=/odom rate_hz=29.994 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:34+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:35+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=3.607e-06 ang_z=1.860e-06 topic=/odom rate_hz=28.994 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:35+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:36+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=4.333e-06 ang_z=1.853e-06 topic=/odom rate_hz=29.007 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:36+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:37+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=2.501e-06 ang_z=1.740e-06 topic=/odom rate_hz=30.010 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:37+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:38+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=3.144e-06 ang_z=1.508e-06 topic=/odom rate_hz=28.998 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:38+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:39+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=1.735e-06 ang_z=1.410e-06 topic=/odom rate_hz=30.000 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:39+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:40+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=5.094e-06 ang_z=1.523e-06 topic=/odom rate_hz=29.008 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:40+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:41+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=4.838e-06 ang_z=1.392e-06 topic=/odom rate_hz=29.001 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:41+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:42+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=3.493e-06 ang_z=1.407e-06 topic=/odom rate_hz=29.998 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:42+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:43+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=1.346e-06 ang_z=1.005e-06 topic=/odom rate_hz=28.985 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:43+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:44+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=1.525e-06 ang_z=1.203e-06 topic=/odom rate_hz=29.007 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:44+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:45+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=1.516e-06 ang_z=1.486e-06 topic=/odom rate_hz=29.999 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:45+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:46+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=3.983e-06 ang_z=9.305e-07 topic=/odom rate_hz=29.002 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:46+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:47+08:00 tool=topic_probe level=OK status=OK reason=rate_ok lin_x=1.472e-06 ang_z=1.258e-06 topic=/odom rate_hz=29.008 threshold=10.000 stale_sec=1.000
+ts=2026-02-27T10:16:47+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:48+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:49+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+ts=2026-02-27T10:16:50+08:00 tool=tf_guard level=OK status=OK reason=tf_ok parent=map child=odom timeout_sec=0.200
+[INFO] [1772164757.275666737] [w2_d7_goal_sender]: started: frame_id=map x=-2.0 y=0.0 yaw=0.0 timeout_sec=120.0 server_timeout_sec=3.0 action_name=/navigate_to_pose
+ts=2026-02-27T11:59:17+08:00 tool=goal_sender level=OK status=OK reason=goal_sent action=/navigate_to_pose frame=map x=-2.000 y=0.000 yaw=0.000
+ts=2026-02-27T11:59:17+08:00 tool=goal_sender level=OK status=OK reason=goal_accepted action=/navigate_to_pose
+ts=2026-02-27T11:59:52+08:00 tool=goal_sender level=OK status=OK reason=result_received action=/navigate_to_pose result_status=4 result_status_name=SUCCEEDED time_sec=35.171

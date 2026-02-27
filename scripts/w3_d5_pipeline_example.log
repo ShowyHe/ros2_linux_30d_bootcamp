@@ -1,0 +1,29 @@
+[INFO] [1772105171.363630529] [w2_d5_tf_guard]: started: timeout_sec=0.2 check1=/map->/odom
+ts=2026-02-26T19:26:12+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=/map child=/odom ok=False timeout_sec=0.200
+ts=2026-02-26T19:26:13+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=/map child=/odom ok=False timeout_sec=0.200
+ts=2026-02-26T19:26:14+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=/map child=/odom ok=False timeout_sec=0.200
+ts=2026-02-26T19:26:15+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=/map child=/odom ok=False timeout_sec=0.200
+ts=2026-02-26T19:26:16+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=/map child=/odom ok=False timeout_sec=0.200
+ts=2026-02-26T19:26:17+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=/map child=/odom ok=False timeout_sec=0.200
+ts=2026-02-26T19:26:18+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=/map child=/odom ok=False timeout_sec=0.200
+ts=2026-02-26T19:26:19+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=/map child=/odom ok=False timeout_sec=0.200
+ts=2026-02-26T19:26:20+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=/map child=/odom ok=False timeout_sec=0.200
+ts=2026-02-26T19:26:21+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=/map child=/odom ok=False timeout_sec=0.200
+Traceback (most recent call last):
+  File "/home/hexiaoyi/ros2_linux_30d_bootcamp/ros2_ws/install/nav2_toolkit/lib/nav2_toolkit/tf_guard", line 33, in <module>
+    sys.exit(load_entry_point('nav2-toolkit', 'console_scripts', 'tf_guard')())
+  File "/home/hexiaoyi/ros2_linux_30d_bootcamp/ros2_ws/build/nav2_toolkit/nav2_toolkit/tf_guard.py", line 67, in main
+    node = TfGuard()
+  File "/home/hexiaoyi/ros2_linux_30d_bootcamp/ros2_ws/build/nav2_toolkit/nav2_toolkit/tf_guard.py", line 18, in __init__
+    self.declare_parameter("timeout_sec", 0.2)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 367, in declare_parameter
+    return self.declare_parameters('', [args], ignore_override)[0]
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 494, in declare_parameters
+    self._set_parameters(
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 739, in _set_parameters
+    raise InvalidParameterTypeException(
+rclpy.exceptions.InvalidParameterTypeException: Trying to set parameter 'timeout_sec' to '2' of type 'INTEGER', expecting type 'DOUBLE'
+[ros2run]: Process exited with failure 1
+[INFO] [1772105242.641980943] [w2_d5_tf_guard]: started: timeout_sec=2.0 check1=/map->/odom
+ts=2026-02-26T19:27:25+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=/map child=/odom ok=False timeout_sec=2.000
+ts=2026-02-26T19:27:27+08:00 tool=tf_guard level=FAIL status=FAIL reason=tf_missing parent=/map child=/odom ok=False timeout_sec=2.000
