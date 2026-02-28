@@ -1,0 +1,118 @@
+Type: tf2_msgs/msg/TFMessage
+
+Publisher count: 1
+
+Node name: robot_state_publisher
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Endpoint type: PUBLISHER
+GID: 01.10.da.3e.81.6d.ad.6e.5a.99.ea.ae.00.00.17.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: TRANSIENT_LOCAL
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Subscription count: 7
+
+Node name: transform_listener_impl_620cb4c49d60
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Endpoint type: SUBSCRIPTION
+GID: 01.10.9d.1a.91.83.c3.02.d7.11.46.e8.00.00.4b.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (100)
+  Durability: TRANSIENT_LOCAL
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: transform_listener_impl_719344002b00
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Endpoint type: SUBSCRIPTION
+GID: 01.10.ff.4b.20.0d.ff.5b.e8.71.38.f3.00.00.69.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (100)
+  Durability: TRANSIENT_LOCAL
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: transform_listener_impl_719328007060
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Endpoint type: SUBSCRIPTION
+GID: 01.10.ff.4b.20.0d.ff.5b.e8.71.38.f3.00.01.a1.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (100)
+  Durability: TRANSIENT_LOCAL
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: transform_listener_impl_71931c003990
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Endpoint type: SUBSCRIPTION
+GID: 01.10.ff.4b.20.0d.ff.5b.e8.71.38.f3.00.01.c7.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (100)
+  Durability: TRANSIENT_LOCAL
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: transform_listener_impl_719318009dc0
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Endpoint type: SUBSCRIPTION
+GID: 01.10.ff.4b.20.0d.ff.5b.e8.71.38.f3.00.01.d6.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (100)
+  Durability: TRANSIENT_LOCAL
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: transform_listener_impl_71930c003550
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Endpoint type: SUBSCRIPTION
+GID: 01.10.ff.4b.20.0d.ff.5b.e8.71.38.f3.00.01.fd.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (100)
+  Durability: TRANSIENT_LOCAL
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: bt_navigator
+Node namespace: /
+Topic type: tf2_msgs/msg/TFMessage
+Endpoint type: SUBSCRIPTION
+GID: 01.10.ff.4b.20.0d.ff.5b.e8.71.38.f3.00.02.25.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (100)
+  Durability: TRANSIENT_LOCAL
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+

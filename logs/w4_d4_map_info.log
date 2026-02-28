@@ -1,0 +1,62 @@
+Type: nav_msgs/msg/OccupancyGrid
+
+Publisher count: 1
+
+Node name: map_server
+Node namespace: /
+Topic type: nav_msgs/msg/OccupancyGrid
+Endpoint type: PUBLISHER
+GID: 01.10.ff.4b.20.0d.ff.5b.e8.71.38.f3.00.00.63.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: TRANSIENT_LOCAL
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Subscription count: 3
+
+Node name: rviz2
+Node namespace: /
+Topic type: nav_msgs/msg/OccupancyGrid
+Endpoint type: SUBSCRIPTION
+GID: 01.10.9d.1a.91.83.c3.02.d7.11.46.e8.00.00.4d.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: TRANSIENT_LOCAL
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: amcl
+Node namespace: /
+Topic type: nav_msgs/msg/OccupancyGrid
+Endpoint type: SUBSCRIPTION
+GID: 01.10.ff.4b.20.0d.ff.5b.e8.71.38.f3.00.00.6f.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: TRANSIENT_LOCAL
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: global_costmap
+Node namespace: /global_costmap
+Topic type: nav_msgs/msg/OccupancyGrid
+Endpoint type: SUBSCRIPTION
+GID: 01.10.ff.4b.20.0d.ff.5b.e8.71.38.f3.00.01.d7.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: TRANSIENT_LOCAL
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+

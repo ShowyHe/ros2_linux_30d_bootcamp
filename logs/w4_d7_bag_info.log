@@ -1,0 +1,18 @@
+
+Files:             w3_d3_map1_run01_0.db3
+Bag size:          12.9 MiB
+Storage id:        sqlite3
+Duration:          226.353325346s
+Start:             Feb 26 2026 15:42:06.761301302 (1772091726.761301302)
+End:               Feb 26 2026 15:45:53.114626648 (1772091953.114626648)
+Messages:          22086
+Topic information: Topic: /cmd_vel | Type: geometry_msgs/msg/Twist | Count: 564 | Serialization Format: cdr
+                   Topic: /odom | Type: nav_msgs/msg/Odometry | Count: 6434 | Serialization Format: cdr
+                   Topic: /amcl_pose | Type: geometry_msgs/msg/PoseWithCovarianceStamped | Count: 27 | Serialization Format: cdr
+                   Topic: /map | Type: nav_msgs/msg/OccupancyGrid | Count: 1 | Serialization Format: cdr
+                   Topic: /navigate_to_pose/_action/status | Type: action_msgs/msg/GoalStatusArray | Count: 3 | Serialization Format: cdr
+                   Topic: /clock | Type: rosgraph_msgs/msg/Clock | Count: 2188 | Serialization Format: cdr
+                   Topic: /tf | Type: tf2_msgs/msg/TFMessage | Count: 11774 | Serialization Format: cdr
+                   Topic: /scan | Type: sensor_msgs/msg/LaserScan | Count: 1094 | Serialization Format: cdr
+                   Topic: /tf_static | Type: tf2_msgs/msg/TFMessage | Count: 1 | Serialization Format: cdr
+

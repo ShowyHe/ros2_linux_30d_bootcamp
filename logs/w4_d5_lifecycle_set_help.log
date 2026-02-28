@@ -1,0 +1,19 @@
+usage: ros2 lifecycle set [-h] [--spin-time SPIN_TIME] [-s] [--no-daemon]
+                          [--include-hidden-nodes]
+                          node_name transition
+
+Trigger lifecycle state transition
+
+positional arguments:
+  node_name             Name of the ROS node
+  transition            The lifecycle transition
+
+options:
+  -h, --help            show this help message and exit
+  --spin-time SPIN_TIME
+                        Spin time in seconds to wait for discovery (only
+                        applies when not using an already running daemon)
+  -s, --use-sim-time    Enable ROS simulation time
+  --no-daemon           Do not spawn nor use an already running daemon
+  --include-hidden-nodes
+                        Consider hidden nodes as well
