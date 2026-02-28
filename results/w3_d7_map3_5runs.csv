@@ -1,0 +1,6 @@
+run_id,goal_id,result,time_sec,notes,recovery,recovery_types,recovery_hits,log_path
+1,,SUCCEEDED,74.020,goal_sender_rc=0;frame=map;x=6.15;y=-1.15;yaw=0.0,,,/home/hexiaoyi/ros2_linux_30d_bootcamp/logs/w3_d7_map3_runs/run_1_20260228_122120.log
+2,,SUCCEEDED,55.298,goal_sender_rc=0;frame=map;x=1.0;y=3.0;yaw=0.0,,,/home/hexiaoyi/ros2_linux_30d_bootcamp/logs/w3_d7_map3_runs/run_2_20260228_122237.log
+3,,SUCCEEDED,61.783,goal_sender_rc=0;frame=map;x=6.15;y=-1.15;yaw=0.0,,,/home/hexiaoyi/ros2_linux_30d_bootcamp/logs/w3_d7_map3_runs/run_3_20260228_122335.log
+4,,SUCCEEDED,54.954,goal_sender_rc=0;frame=map;x=1.0;y=3.0;yaw=0.0,,,/home/hexiaoyi/ros2_linux_30d_bootcamp/logs/w3_d7_map3_runs/run_4_20260228_122440.log
+5,,SUCCEEDED,65.404,goal_sender_rc=0;frame=map;x=6.15;y=-1.15;yaw=0.0,,,/home/hexiaoyi/ros2_linux_30d_bootcamp/logs/w3_d7_map3_runs/run_5_20260228_122537.log

@@ -36,3 +36,11 @@ logs/**
 # common junk
 **/__pycache__/
 *.pyc
+
+# dropped w3_d6p5 scratch files (not part of 30d mainline)
+scripts/gen_report.sh
+scripts/demo_3min.sh
+scripts/summarize_results.py
+docs/w3_d6p5_*.md
+logs/w3_d6p5_gen_report.log
+artifacts/
