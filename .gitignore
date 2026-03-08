@@ -32,7 +32,10 @@ results/*
 logs/**
 !logs/.gitkeep
 !logs/w*_d*_*.log
-!logs/local_map_cropper
+
+# keep local_map_cropper evidence
+!logs/local_map_cropper/
+!logs/local_map_cropper/**
 
 # common junk
 **/__pycache__/

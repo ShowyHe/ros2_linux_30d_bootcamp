@@ -1,0 +1,10 @@
+[INFO] [1772953703.991006599] [crop_map_node]: crop_map_node started
+[INFO] [1772953703.992776229] [crop_map_node]: Received map: width=384, height=384, resolution=0.05000000074505806
+[WARN] [1772953705.483406996] [crop_map_node]: Failed to lookup TF map->base_link: Lookup would require extrapolation into the past.  Requested time 216.366000 but the earliest data is at time 216.527000, when looking up transform from frame [base_link] to frame [map]
+[INFO] [1772953705.975148576] [crop_map_node]: Robot pose in map: x=-1.953, y=0.009
+[INFO] [1772953705.982169091] [crop_map_node]: Saved cropped map:
+  pgm : /home/hexiaoyi/ros2_linux_30d_bootcamp/data/local_map_cropper/cropped_map.pgm
+  yaml: /home/hexiaoyi/ros2_linux_30d_bootcamp/data/local_map_cropper/cropped_map.yaml
+  crop width=158, height=158
+  new origin=(-5.950, -3.950)
+[INFO] [1772953705.982737293] [crop_map_node]: Crop and save finished successfully.
