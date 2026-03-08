@@ -133,22 +133,32 @@
 
 ---
 
-## 7. 推荐日志归档路径
+## 7. 推荐日志、images归档路径
 
-建议将本次任务相关日志统一归档到：
+本次任务相关日志统一归档到：
 
     ~/ros2_linux_30d_bootcamp/logs/local_map_cropper/
 
-建议至少保留以下日志文件：
+图像文件统一保存在：
 
+`~/ros2_linux_30d_bootcamp/images/`
+
+- `before_image.png`：裁剪前的地图显示效果截图，用于记录原始全局地图在 RViz2 中的状态
+- `after_crop.png`：裁剪并重新加载后的小地图显示效果截图，用于证明局部子图已经成功替换原始地图并在 RViz2 中显示
+
+日志文件夹包含以下日志文件：
+
+    agter_crop_map.log
+    before_crop_map.log
+    load_cropped_map.log
     run_crop_map.log
-    load_map.log
-    verify_map.log
 
 其中：
-- `run_crop_map.log`：裁剪节点运行日志
-- `load_map.log`：调用 `map_server/load_map` 的返回日志
-- `verify_map.log`：重新读取 `/map` 验证后的结果日志
+
+- `before_crop_map.log`：裁剪前 `/map` 的原始输出，用于记录全局地图的 `resolution`、`width`、`height` 和 `origin`
+- `run_crop_map.log`：运行 `local_map_cropper` 功能包时的节点输出日志，用于证明裁剪节点已执行，并生成 `cropped_map.pgm` 与 `cropped_map.yaml`
+- `load_cropped_map.log`：调用 `/map_server/load_map` 加载裁剪地图时的返回日志，用于证明裁剪后的地图已交由 Nav2 的 `map_server` 重新加载
+- `after_crop_map.log`：裁剪后 `/map` 的输出日志，用于记录局部地图加载后的关键参数变化，并与裁剪前日志形成前后对照
 
 ---
 
