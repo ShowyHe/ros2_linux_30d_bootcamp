@@ -26,7 +26,7 @@ results/*
 !results/*.csv
 
 # --- Optional: data (often large) ---
-data/
+
 
 # keep logs as evidence, but avoid accidental junk
 logs/**
